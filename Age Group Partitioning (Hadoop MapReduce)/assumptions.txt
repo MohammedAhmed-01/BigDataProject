@@ -1,0 +1,5 @@
+- Age range: 1–120
+- Income >= 0
+- Missing or invalid records are skipped
+- Age groups:
+  Under 20, 20-30, 31-50, 51+
