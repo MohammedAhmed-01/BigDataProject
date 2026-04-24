@@ -60,18 +60,22 @@
 ```text
 project-root/
 │
-├── src/main/java/task2/
+├── src/main/java/agegroup/
 │   ├── AgeGroupMapper.java
 │   ├── AgeGroupPartitioner.java
 │   ├── AgeGroupReducer.java
 │   └── AgeGroupDriver.java
 │
 ├── input/
+│   └── sample_input.txt
+│
 ├── output/
+│
+├── mapper_output.txt
+├── sample_output.txt
 │
 ├── README.md
 ├── assumptions.txt
-└── sample_output.txt
 ```
 
 ---
