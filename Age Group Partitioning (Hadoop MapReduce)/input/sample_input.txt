@@ -1,0 +1,21 @@
+person_id,age,income,employment_status,education_level
+P001,25,3000,Employed,Bachelor
+P002,35,5000,Employed,Master
+P003,45,6000,Employed,Bachelor
+P004,22,2500,Student,High School
+P005,55,7000,Employed,PhD
+P006,28,4000,Employed,Bachelor
+P007,38,5500,Self-Employed,Master
+P008,62,6500,Retired,Bachelor
+P009,19,1200,Student,High School
+P010,42,4800,Employed,Bachelor
+P011,67,5000,Retired,Master
+P012,31,3800,Unemployed,Bachelor
+P013,50,7200,Self-Employed,PhD
+P014,26,3200,Employed,Bachelor
+P015,72,4500,Retired,High School
+P016,17,0,Student,High School
+P017,48,6100,Employed,Master
+P018,33,4400,Employed,Bachelor
+P019,58,8000,Self-Employed,PhD
+P020,24,2800,Student,Bachelor

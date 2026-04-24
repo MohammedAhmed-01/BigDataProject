@@ -1,0 +1,11 @@
+person_id,age,income,employment_status,education_level
+VALID001,25,3000,Employed,Bachelor
+BAD_AGE1,abc,3000,Employed,Bachelor
+BAD_AGE2,-5,3000,Employed,Bachelor
+BAD_AGE3,200,3000,Employed,Bachelor
+BAD_INC1,30,xyz,Employed,Bachelor
+BAD_INC2,30,-100,Employed,Bachelor
+BAD_FLDS,30,3000,Employed
+VALID002,55,7000,Retired,PhD
+BLANK_ST,40,4000,,Bachelor
+VALID003,19,1500,Student,High School
