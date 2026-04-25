@@ -1,0 +1,20 @@
+20-30    3000|Employed
+31-50    5000|Employed
+31-50    6000|Employed
+20-30    2500|Student
+51+      7000|Employed
+20-30    4000|Employed
+31-50    5500|Self-Employed
+51+      6500|Retired
+Under 20 1200|Student
+31-50    4800|Employed
+51+      5000|Retired
+31-50    3800|Unemployed
+31-50    7200|Self-Employed
+20-30    3200|Employed
+51+      4500|Retired
+Under 20 0|Student
+31-50    6100|Employed
+31-50    4400|Employed
+51+      8000|Self-Employed
+20-30    2800|Student

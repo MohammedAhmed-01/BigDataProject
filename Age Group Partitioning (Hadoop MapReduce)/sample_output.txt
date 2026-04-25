@@ -1,0 +1,4 @@
+20-30   Avg Income: ~3166
+31-50   Avg Income: ~5200
+51+     Avg Income: ~6000
+Under 20 Avg Income: ~600
