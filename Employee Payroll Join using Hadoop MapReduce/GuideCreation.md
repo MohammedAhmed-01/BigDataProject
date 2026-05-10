@@ -1,4 +1,3 @@
-````markdown
 # Employee Payroll Join using Hadoop MapReduce
 
 ## 📌 Project Overview
@@ -28,7 +27,7 @@ The system processes large-scale payroll data and produces enriched payroll reco
 │   └── PayrollJoinDriver.java
 │
 └── payroll_output
-````
+```
 
 ---
 
