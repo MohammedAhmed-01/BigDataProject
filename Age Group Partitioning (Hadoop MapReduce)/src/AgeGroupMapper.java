@@ -7,34 +7,50 @@ import java.io.IOException;
  * AgeGroupMapper
  *
  * Reads demographic CSV records and emits:
- *   Key  : age group label  (e.g. "20-30", "31-50", "51+")
- *   Value: composite string "age,income"
+ *   Key  : age-group label         (Text)       e.g. "25-34"
+ *   Value: per-record aggregate     (IncomeCountWritable)
+ *          → sumIncome = income
+ *          → count     = 1
+ *          → sumAge    = age
+ *          → minIncome = income
+ *          → maxIncome = income
  *
- * Input format (CSV):
+ * Using {@link IncomeCountWritable} as the value type eliminates the
+ * brittle "age,income" and "C:…" string encoding previously used to
+ * communicate between the Mapper, Combiner, and Reducer.  Hadoop's
+ * binary serialisation is faster, more compact, and type-safe.
+ *
+ * Input format (CSV — 5 fields):
  *   person_id, age, income, employment_status, education_level
  *
- * Validation:
- *   - Skips malformed lines (wrong field count, unparseable numbers)
- *   - Skips records with age <= 0 or age > 150
+ * Validation rules (unchanged from original):
+ *   - Skips empty lines and the CSV header row
+ *   - Skips lines that do not have exactly 5 fields
+ *   - Skips records with unparseable age or income
+ *   - Skips records with age ≤ 0 or age > 150
  *   - Skips records with income < 0
+ *   - Skips records with age < 18 (below the first tracked group)
  */
-public class AgeGroupMapper extends Mapper<Object, Text, Text, Text> {
+public class AgeGroupMapper extends Mapper<Object, Text, Text, IncomeCountWritable> {
 
     // ---------------------------------------------------------------
     // Constants
     // ---------------------------------------------------------------
-    private static final int FIELD_COUNT      = 5;
-    private static final int IDX_AGE          = 1;
-    private static final int IDX_INCOME       = 2;
-    private static final int MIN_VALID_AGE    = 1;
-    private static final int MAX_VALID_AGE    = 150;
-
-    // Reusable Hadoop writables (avoid GC pressure on large datasets)
-    private final Text outKey   = new Text();
-    private final Text outValue = new Text();
+    private static final int FIELD_COUNT   = 5;
+    private static final int IDX_AGE       = 1;
+    private static final int IDX_INCOME    = 2;
+    private static final int MIN_VALID_AGE = 1;
+    private static final int MAX_VALID_AGE = 150;
 
     // ---------------------------------------------------------------
-    // Map method
+    // Reusable output objects — avoids per-record object allocation
+    // and reduces GC pressure on large datasets.
+    // ---------------------------------------------------------------
+    private final Text                outKey   = new Text();
+    private final IncomeCountWritable outValue = new IncomeCountWritable();
+
+    // ---------------------------------------------------------------
+    // Map
     // ---------------------------------------------------------------
     @Override
     protected void map(Object key, Text value, Context context)
@@ -42,7 +58,7 @@ public class AgeGroupMapper extends Mapper<Object, Text, Text, Text> {
 
         String line = value.toString().trim();
 
-        // Skip empty lines and header rows
+        // Skip empty lines and the CSV header row
         if (line.isEmpty() || line.startsWith("person_id")) {
             return;
         }
@@ -83,43 +99,49 @@ public class AgeGroupMapper extends Mapper<Object, Text, Text, Text> {
             return;
         }
 
-        // ── Determine age group label ────────────────────────────────
+        // ── Determine age-group label ─────────────────────────────────
         String ageGroup = getAgeGroup(age);
         if (ageGroup == null) {
-            // Age below the minimum tracked group (< 18) — skip
+            // Age is valid but below the first tracked group (< 18)
             context.getCounter("DataQuality", "UnderageSkipped").increment(1);
             return;
         }
 
-        // ── Emit key/value ───────────────────────────────────────────
-        // Value format: "age,income"  (both needed for richer reducer stats)
+        // ── Build IncomeCountWritable for this single record ──────────
+        // A single record is its own min and max; count = 1; sumAge = age.
         outKey.set(ageGroup);
-        outValue.set(age + "," + income);
+        outValue.setSumIncome(income);
+        outValue.setCount(1L);
+        outValue.setSumAge((long) age);
+        outValue.setMinIncome(income);
+        outValue.setMaxIncome(income);
+
         context.write(outKey, outValue);
         context.getCounter("DataQuality", "ValidRecords").increment(1);
     }
 
     // ---------------------------------------------------------------
-    // Helper: map numeric age → age-group label
+    // Helper: numeric age → age-group label
     // ---------------------------------------------------------------
 
     /**
-     * Returns the age-group bucket label for a given age, or {@code null}
-     * if the age falls outside all tracked groups (i.e. under 18).
+     * Maps a validated age to one of five age-group bucket labels, or
+     * returns {@code null} when the age is below the first tracked group.
      *
-     * Age groups:
-     *   18–24  →  "18-24"
-     *   25–34  →  "25-34"
-     *   35–44  →  "35-44"
-     *   45–54  →  "45-54"
-     *   55+    →  "55+"
+     * <pre>
+     *   18 – 24  →  "18-24"
+     *   25 – 34  →  "25-34"
+     *   35 – 44  →  "35-44"
+     *   45 – 54  →  "45-54"
+     *   55 +     →  "55+"
+     *   < 18     →  null   (caller increments UnderageSkipped counter)
+     * </pre>
      *
-     * NOTE: The output sample in the task spec uses broader bands
-     *       (20-30, 31-50, 51+).  The partitioner supports BOTH by
-     *       mapping the fine-grained labels to partition indices; the
-     *       reducer key is what appears in the final output.
-     *       Change the bands here (and mirror in AgeGroupPartitioner)
-     *       to match whichever grouping is preferred.
+     * The labels must stay in sync with the switch-cases in
+     * {@link AgeGroupPartitioner#getPartition}.
+     *
+     * @param age a pre-validated age in the range [MIN_VALID_AGE, MAX_VALID_AGE]
+     * @return age-group label string, or {@code null} if age < 18
      */
     public static String getAgeGroup(int age) {
         if (age < 18)  return null;

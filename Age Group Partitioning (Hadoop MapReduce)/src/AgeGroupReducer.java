@@ -6,99 +6,97 @@ import java.io.IOException;
 /**
  * AgeGroupReducer
  *
- * Receives all mapper (or combiner) records for a single age-group
- * partition and computes:
+ * Receives all {@link IncomeCountWritable} values for a single age-group
+ * partition (either directly from the Mapper, or pre-aggregated by the
+ * Combiner) and computes the final statistics:
  *
  *   • Average income
  *   • Minimum income
  *   • Maximum income
- *   • Total persons (count)
+ *   • Total person count
  *   • Average age within the group
  *
- * ─── Input value formats ─────────────────────────────────────────────
+ * Type signature:
+ *   Input  key   : Text                  (age-group label)
+ *   Input  value : IncomeCountWritable   (from Mapper or Combiner)
+ *   Output key   : Text                  (age-group label — passed through)
+ *   Output value : Text                  (formatted statistics string)
  *
- *  Without Combiner  →  "age,income"
- *                        e.g.  "25,3000.0"
+ * ─── How this works with and without the Combiner ────────────────────
  *
- *  With Combiner     →  "C:sumAge,sumIncome,count,minIncome,maxIncome"
- *                        e.g.  "C:103,12000.0,4,3000.0,5000.0"
+ *   Without Combiner:
+ *     Each value is a single-record IncomeCountWritable (count=1).
+ *     The reducer merges N such objects, one per CSV row.
  *
- * The reducer detects the "C:" prefix (defined in AgeGroupCombiner) and
- * handles both formats transparently.
+ *   With Combiner:
+ *     Each value is a partially-aggregated IncomeCountWritable from a
+ *     local node.  The reducer merges these partial aggregates.
  *
- * ─── Sample output ───────────────────────────────────────────────────
+ *   In both cases the reducer logic is identical — it simply calls
+ *   {@link IncomeCountWritable#merge} on every incoming value.
+ *   The "C:" prefix detection that was needed in the Text-based
+ *   implementation is no longer required.
  *
- *  25-34    Avg Income: 4500 | Min: 3000 | Max: 5500 | Count: 4 | Avg Age: 29
+ * ─── Sample output line ──────────────────────────────────────────────
+ *
+ *   25-34    Avg Income: 4500 | Min: 3000 | Max: 5500 | Count: 4 | Avg Age: 29
  */
-public class AgeGroupReducer extends Reducer<Text, Text, Text, Text> {
+public class AgeGroupReducer
+        extends Reducer<Text, IncomeCountWritable, Text, Text> {
 
-    private final Text result = new Text();
+    // Reusable output writable — one instance per Reducer task
+    private final Text         result      = new Text();
 
+    // Accumulator — reset at the start of every reduce() call
+    private final IncomeCountWritable accumulator = new IncomeCountWritable();
+
+    // ---------------------------------------------------------------
+    // Reduce
+    // ---------------------------------------------------------------
+
+    /**
+     * Merges all {@link IncomeCountWritable} values for {@code key} and
+     * writes a single formatted statistics line.
+     *
+     * @param key     age-group label (e.g. "35-44")
+     * @param values  iterable of IncomeCountWritable objects
+     * @param context MapReduce task context for writing output and counters
+     */
     @Override
-    protected void reduce(Text key, Iterable<Text> values, Context context)
+    protected void reduce(Text key, Iterable<IncomeCountWritable> values, Context context)
             throws IOException, InterruptedException {
 
-        long   count      = 0;
-        double sumIncome  = 0.0;
-        double minIncome  = Double.MAX_VALUE;
-        double maxIncome  = Double.MIN_VALUE;
-        long   sumAge     = 0;
+        // ── Reset accumulator ─────────────────────────────────────────
+        // Hadoop may reuse the same Reducer instance for multiple keys,
+        // so the accumulator must be reset to a clean "empty" state.
+        accumulator.setSumIncome(0.0);
+        accumulator.setCount(0L);
+        accumulator.setSumAge(0L);
+        accumulator.setMinIncome(Double.MAX_VALUE);
+        accumulator.setMaxIncome(-Double.MAX_VALUE);
 
-        for (Text val : values) {
-            String raw = val.toString();
-
-            // ── Detect combiner-produced value ────────────────────────
-            if (raw.startsWith(AgeGroupCombiner.COMBINED_PREFIX)) {
-                String[] p = raw.substring(AgeGroupCombiner.COMBINED_PREFIX.length()).split(",");
-                if (p.length != 5) {
-                    context.getCounter("ReducerDataQuality", "MalformedCombinedValue").increment(1);
-                    continue;
-                }
-                try {
-                    sumAge    += Long.parseLong(p[0].trim());
-                    sumIncome += Double.parseDouble(p[1].trim());
-                    count     += Long.parseLong(p[2].trim());
-                    double cMin = Double.parseDouble(p[3].trim());
-                    double cMax = Double.parseDouble(p[4].trim());
-                    if (cMin < minIncome) minIncome = cMin;
-                    if (cMax > maxIncome) maxIncome = cMax;
-                } catch (NumberFormatException e) {
-                    context.getCounter("ReducerDataQuality", "UnparsableCombinedValue").increment(1);
-                }
-
-            } else {
-                // ── Raw mapper value: "age,income" ────────────────────
-                String[] parts = raw.split(",");
-                if (parts.length != 2) {
-                    context.getCounter("ReducerDataQuality", "MalformedRawValue").increment(1);
-                    continue;
-                }
-                try {
-                    int    age    = Integer.parseInt(parts[0].trim());
-                    double income = Double.parseDouble(parts[1].trim());
-                    count++;
-                    sumAge    += age;
-                    sumIncome += income;
-                    if (income < minIncome) minIncome = income;
-                    if (income > maxIncome) maxIncome = income;
-                } catch (NumberFormatException e) {
-                    context.getCounter("ReducerDataQuality", "UnparsableRawValue").increment(1);
-                }
-            }
+        // ── Merge all values for this key ─────────────────────────────
+        for (IncomeCountWritable val : values) {
+            accumulator.merge(val);
         }
 
         // ── Guard: no valid records received ─────────────────────────
-        if (count == 0) {
+        if (accumulator.getCount() == 0) {
             context.getCounter("ReducerDataQuality", "EmptyGroups").increment(1);
             return;
         }
 
-        long avgIncome = Math.round(sumIncome / count);
-        long avgAge    = Math.round((double) sumAge / count);
+        // ── Compute final statistics ──────────────────────────────────
+        long avgIncome = Math.round(accumulator.getAverageIncome());
+        long avgAge    = Math.round(accumulator.getAverageAge());
 
         String output = String.format(
                 "Avg Income: %d | Min: %.0f | Max: %.0f | Count: %d | Avg Age: %d",
-                avgIncome, minIncome, maxIncome, count, avgAge);
+                avgIncome,
+                accumulator.getMinIncome(),
+                accumulator.getMaxIncome(),
+                accumulator.getCount(),
+                avgAge);
 
         result.set(output);
         context.write(key, result);

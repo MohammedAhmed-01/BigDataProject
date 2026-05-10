@@ -21,18 +21,18 @@ import org.apache.hadoop.util.ToolRunner;
  *   Input  : HDFS path containing demographic CSV files
  *   Output : HDFS path; one part-r-0000{N} file per age group
  *
- *   Mapper     : AgeGroupMapper
- *   Combiner   : AgeGroupCombiner  (optional — toggled via -D flag)
- *   Partitioner: AgeGroupPartitioner
- *   Reducer    : AgeGroupReducer
- *   Reducers   : 5  (one per age group)
+ *   Mapper       : AgeGroupMapper      (emits Text key, IncomeCountWritable value)
+ *   Combiner     : AgeGroupCombiner    (optional — merges IncomeCountWritables locally)
+ *   Partitioner  : AgeGroupPartitioner (routes by age-group label)
+ *   Reducer      : AgeGroupReducer     (produces final Text statistics line)
+ *   Reducers     : 5                   (one per age group)
  *
- * ─── Usage ───────────────────────────────────────────────────────────
+ * ─── Key type decisions ───────────────────────────────────────────────
  *
- *   hadoop jar agegroup.jar AgeGroupDriver \
- *       -D agegroup.combiner=true          \   # optional (default: true)
- *       /user/cloudera/input/demographics  \
- *       /user/cloudera/output/agegroup
+ *   Map output key   : Text                  (age-group label)
+ *   Map output value : IncomeCountWritable    (binary Writable — replaces "age,income" string)
+ *   Job output key   : Text                  (age-group label — passed through by reducer)
+ *   Job output value : Text                  (formatted statistics string)
  *
  * ─── Output file mapping ─────────────────────────────────────────────
  *
@@ -41,10 +41,30 @@ import org.apache.hadoop.util.ToolRunner;
  *   part-r-00002  →  35-44
  *   part-r-00003  →  45-54
  *   part-r-00004  →  55+
+ *
+ * ─── Usage ───────────────────────────────────────────────────────────
+ *
+ *   # Compile all sources
+ *   javac -classpath `hadoop classpath` -d . *.java
+ *
+ *   # Package
+ *   jar -cvf agegroup.jar *.class
+ *
+ *   # Run WITH combiner (default)
+ *   hadoop jar agegroup.jar AgeGroupDriver \
+ *       -D agegroup.combiner=true           \
+ *       /user/cloudera/input/demographics   \
+ *       /user/cloudera/output/agegroup_with_combiner
+ *
+ *   # Run WITHOUT combiner
+ *   hadoop jar agegroup.jar AgeGroupDriver \
+ *       -D agegroup.combiner=false          \
+ *       /user/cloudera/input/demographics   \
+ *       /user/cloudera/output/agegroup_no_combiner
  */
 public class AgeGroupDriver extends Configured implements Tool {
 
-    /** Property key to enable/disable the Combiner at runtime. */
+    /** Configuration property key to enable or disable the Combiner at runtime. */
     private static final String PROP_COMBINER = "agegroup.combiner";
 
     // ---------------------------------------------------------------
@@ -56,14 +76,15 @@ public class AgeGroupDriver extends Configured implements Tool {
     }
 
     // ---------------------------------------------------------------
-    // Tool interface — called by ToolRunner
+    // Tool interface — called by ToolRunner after parsing -D flags
     // ---------------------------------------------------------------
     @Override
     public int run(String[] args) throws Exception {
 
         // ── Argument validation ──────────────────────────────────────
         if (args.length < 2) {
-            System.err.println("Usage: AgeGroupDriver [-D agegroup.combiner=true|false] "
+            System.err.println(
+                    "Usage: AgeGroupDriver [-D agegroup.combiner=true|false] "
                     + "<inputPath> <outputPath>");
             return 1;
         }
@@ -71,33 +92,39 @@ public class AgeGroupDriver extends Configured implements Tool {
         String inputPath  = args[0];
         String outputPath = args[1];
 
+        // getConf() returns the Configuration already populated by
+        // ToolRunner with any -D key=value pairs from the command line.
         Configuration conf = getConf();
 
         // ── Combiner toggle (default: enabled) ───────────────────────
         boolean useCombiner = conf.getBoolean(PROP_COMBINER, true);
 
-        System.out.printf("[AgeGroupDriver] Input  : %s%n", inputPath);
-        System.out.printf("[AgeGroupDriver] Output : %s%n", outputPath);
-        System.out.printf("[AgeGroupDriver] Combiner enabled: %b%n", useCombiner);
+        System.out.printf("[AgeGroupDriver] Input            : %s%n", inputPath);
+        System.out.printf("[AgeGroupDriver] Output           : %s%n", outputPath);
+        System.out.printf("[AgeGroupDriver] Combiner enabled : %b%n", useCombiner);
 
-        // ── Delete existing output path ──────────────────────────────
+        // ── Delete existing output path if present ───────────────────
         Path output = new Path(outputPath);
         FileSystem fs = output.getFileSystem(conf);
         if (fs.exists(output)) {
-            System.out.printf("[AgeGroupDriver] Deleting existing output path: %s%n", outputPath);
+            System.out.printf(
+                    "[AgeGroupDriver] Deleting existing output path: %s%n", outputPath);
             fs.delete(output, true);
         }
 
-        // ── Build the job ─────────────────────────────────────────────
+        // ── Build and configure the job ───────────────────────────────
         Job job = Job.getInstance(conf, "AgeGroup-Partitioning");
         job.setJarByClass(AgeGroupDriver.class);
 
-        // Classes
+        // ── Classes ───────────────────────────────────────────────────
         job.setMapperClass(AgeGroupMapper.class);
         job.setPartitionerClass(AgeGroupPartitioner.class);
         job.setReducerClass(AgeGroupReducer.class);
 
-        // Combiner (optional — reduces shuffle data by ~60-80 % on large files)
+        // ── Optional Combiner ─────────────────────────────────────────
+        // The Combiner's input/output types match the Mapper's output
+        // types (Text key, IncomeCountWritable value), satisfying Hadoop's
+        // combiner type-compatibility requirement.
         if (useCombiner) {
             job.setCombinerClass(AgeGroupCombiner.class);
             System.out.println("[AgeGroupDriver] Combiner: AgeGroupCombiner ENABLED");
@@ -105,24 +132,36 @@ public class AgeGroupDriver extends Configured implements Tool {
             System.out.println("[AgeGroupDriver] Combiner: DISABLED");
         }
 
-        // Number of reducers must match partitioner constant
+        // ── Reducer count — must match AgeGroupPartitioner.NUM_PARTITIONS ──
         job.setNumReduceTasks(AgeGroupPartitioner.NUM_PARTITIONS);
 
-        // Key/value types
+        // ── Mapper output types ───────────────────────────────────────
+        // The Mapper emits:
+        //   key   = Text                 (age-group label)
+        //   value = IncomeCountWritable  (per-record aggregate)
+        //
+        // These types are also consumed by the Combiner (if enabled) and
+        // the Partitioner, so they must be set as the MAP output types,
+        // not as the job output types.
         job.setMapOutputKeyClass(Text.class);
-        job.setMapOutputValueClass(Text.class);
+        job.setMapOutputValueClass(IncomeCountWritable.class);
+
+        // ── Final reducer output types ────────────────────────────────
+        // The Reducer emits:
+        //   key   = Text  (age-group label — passed through)
+        //   value = Text  (formatted statistics string)
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
 
-        // Input / output formats
+        // ── Input / output formats ────────────────────────────────────
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
 
-        // Paths
+        // ── HDFS paths ────────────────────────────────────────────────
         FileInputFormat.addInputPath(job, new Path(inputPath));
         FileOutputFormat.setOutputPath(job, output);
 
-        // ── Submit and wait ───────────────────────────────────────────
+        // ── Submit and block until complete ───────────────────────────
         boolean success = job.waitForCompletion(true);
 
         // ── Print job counters ────────────────────────────────────────

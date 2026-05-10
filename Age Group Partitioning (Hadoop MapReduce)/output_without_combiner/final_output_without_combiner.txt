@@ -1,0 +1,5 @@
+18-24	Avg Income: 23787 | Min: 12200 | Max: 40500 | Count: 3004678 | Avg Age: 21
+25-34	Avg Income: 41087 | Min: 21000 | Max: 69900 | Count: 7163194 | Avg Age: 30
+35-44	Avg Income: 56231 | Min: 28700 | Max: 95700 | Count: 8294232 | Avg Age: 39
+45-54	Avg Income: 62716 | Min: 32000 | Max: 106700 | Count: 5893380 | Avg Age: 49
+55+	Avg Income: 51905 | Min: 26500 | Max: 88300 | Count: 3342713 | Avg Age: 61
