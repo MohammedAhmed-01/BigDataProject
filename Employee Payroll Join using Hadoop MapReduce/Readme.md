@@ -2,66 +2,79 @@
 
 ---
 
-## 📌 1. Project Overview
+# 📌 1. Project Overview
 
 This project implements a **Reduce-Side Join** using **Hadoop MapReduce (Java)** to integrate and process two heterogeneous datasets:
 
-* **Employee Directory Dataset**
-* **Monthly Payroll Transactions Dataset**
+* Employee Directory Dataset
+* Monthly Payroll Transactions Dataset
 
 The system enriches payroll records with employee information and computes key financial metrics such as:
 
-* Total Pay per record
+* Total Pay per payroll record
 * Maximum Pay per employee across all months
 
 The solution is designed to be:
 
-* ✅ Scalable (handles large datasets ≥ 1GB)
-* ✅ Robust (handles malformed and missing data)
-* ✅ Modular (clean separation of Mapper, Reducer, Driver)
+* ✅ Scalable (supports datasets larger than 1GB)
+* ✅ Robust (handles malformed and missing records)
+* ✅ Modular (separate Mapper, Reducer, and Driver components)
+* ✅ Distributed and fault tolerant using Hadoop MapReduce
 
 ---
 
-## 🎯 2. Problem Statement
+# 🎯 2. Problem Statement
 
-Given two datasets:
+The project processes two datasets:
 
-### Dataset 1: Employee Directory
+## 🧑 Dataset 1 — Employee Directory
 
 Contains static employee information.
 
-### Dataset 2: Payroll Transactions
+## 💰 Dataset 2 — Payroll Transactions
 
-Contains monthly salary and bonus data.
+Contains monthly payroll records including salary and bonus information.
 
 ---
 
-### 🧩 Objective
+## 🧩 Objective
 
-For each payroll record:
+For every payroll transaction:
 
-1. Join with employee data using `employeeId`
+1. Join payroll data with employee data using `employeeId`
 2. Compute:
 
-   * `totalPay = baseSalary + bonus`
-3. Track:
+```text
+totalPay = baseSalary + bonus
+```
 
-   * `maxPay` across all months for the same employee
-4. Produce enriched output
+3. Track the highest salary paid to the employee across all months:
+
+```text
+maxPay
+```
+
+4. Generate enriched payroll output records.
 
 ---
 
-## 📂 3. Input Data Specification
+# 📂 3. Input Data Specification
 
-### 🧑 3.1 Employee File
+## 🧑 3.1 Employee File
 
-**Schema:**
+### 📍 File Path
 
-```text
-employeeId, firstName, lastName, department
+```bash
+Data/employees.csv
 ```
 
-**Example:**
+### 📑 Schema
+
+```text
+employeeId,firstName,lastName,department
+```
+
+### ✅ Example
 
 ```text
 EMP01,Nour,Hassan,Engineering
@@ -70,15 +83,21 @@ EMP02,Sara,Ali,HR
 
 ---
 
-### 💰 3.2 Payroll File
+## 💰 3.2 Payroll File
 
-**Schema:**
+### 📍 File Path
 
-```text
-payrollId, employeeId, month, baseSalary, bonus
+```bash
+Data/payroll.csv
 ```
 
-**Example:**
+### 📑 Schema
+
+```text
+payrollId,employeeId,month,baseSalary,bonus
+```
+
+### ✅ Example
 
 ```text
 PR001,EMP01,Jan,8000,500
@@ -87,179 +106,204 @@ PR002,EMP01,Feb,8200,500
 
 ---
 
-## 📤 4. Output Specification
+# 📤 4. Output Specification
 
-**Schema:**
+## 📑 Output Schema
 
 ```text
-employeeId    fullName,department,month,totalPay,maxPay
+employeeId fullName,department,month,totalPay,maxPay
 ```
 
 ---
 
-### ✅ Example Output
+## ✅ Example Output
 
 ```text
-EMP01    Nour Hassan,Engineering,Jan,8500,8700
-EMP01    Nour Hassan,Engineering,Feb,8700,8700
-EMP02    Sara Ali,HR,Jan,7300,7300
-EMP04    UNKNOWN EMPLOYEE,UNKNOWN,Jan,6200,6200
+EMP01 Nour Hassan,Engineering,Jan,8500,8700
+EMP01 Nour Hassan,Engineering,Feb,8700,8700
+EMP02 Sara Ali,HR,Jan,7300,7300
+EMP04 UNKNOWN EMPLOYEE,UNKNOWN,Jan,6200,6200
 ```
 
 ---
 
-## 🏗️ 5. Project Structure
+# 🏗️ 5. Project Structure
 
 ```text
-EmployeePayrollJoin/
+/media/sf_EmployeePayroll
 │
-├── src/
-│   └── main/java/task1/
-│       ├── EmployeeMapper.java
-│       ├── PayrollMapper.java
-│       ├── PayrollReducer.java
-│       └── PayrollJoinDriver.java
-│
-├── input/
+├── Data
 │   ├── employees.csv
 │   └── payroll.csv
 │
-├── output_sample/
-│   └── part-r-00000
+├── Src
+│   ├── EmployeeMapper.java
+│   ├── PayrollMapper.java
+│   ├── PayrollReducer.java
+│   └── PayrollJoinDriver.java
 │
-├── README.md
-├── assumptions.txt
-└── sample_expected_output.txt
+├── payroll_output
+│
+└── README.md
 ```
 
 ---
 
-## ⚙️ 6. System Design & Architecture
+# ⚙️ 6. System Design & Architecture
 
-This solution follows the **Reduce-Side Join Pattern**.
-
----
-
-### 🔹 6.1 Data Flow
-
-1. Input files are read independently
-2. Each dataset is processed using a dedicated Mapper
-3. Intermediate data is tagged and grouped by key (`employeeId`)
-4. Reducer performs join + aggregation
+This project follows the **Reduce-Side Join Pattern** in Hadoop MapReduce.
 
 ---
 
-### 🔹 6.2 Map Phase
+## 🔹 6.1 Data Flow
 
-#### 🧑 EmployeeMapper
+1. Employee and payroll datasets are read independently.
+2. Each dataset is processed using a dedicated Mapper.
+3. Intermediate records are grouped using `employeeId` as the key.
+4. Hadoop Shuffle & Sort sends all related records to the same reducer.
+5. Reducer performs join operations and salary aggregation.
 
-* Reads employee records
-* Extracts employee attributes
-* Emits:
+---
+
+## 🔹 6.2 Map Phase
+
+### 🧑 EmployeeMapper
+
+Responsibilities:
+
+* Read employee records
+* Extract employee information
+* Emit tagged employee values
+
+### 📤 Output
 
 ```text
-(employeeId, "emp~firstName,lastName,department")
+key = employeeId
+value = emp~firstName,lastName,department
 ```
 
 ---
 
-#### 💰 PayrollMapper
+### 💰 PayrollMapper
 
-* Reads payroll records
-* Validates numeric fields
-* Emits:
+Responsibilities:
+
+* Read payroll transactions
+* Validate salary fields
+* Emit tagged payroll values
+
+### 📤 Output
 
 ```text
-(employeeId, "pay~month,baseSalary,bonus")
+key = employeeId
+value = pay~month,baseSalary,bonus
 ```
 
 ---
 
-### 🔹 6.3 Shuffle & Sort Phase
+## 🔹 6.3 Shuffle & Sort Phase
 
-* Hadoop automatically groups all values by `employeeId`
-* Ensures all related records go to the same reducer
+Hadoop automatically:
 
----
-
-### 🔹 6.4 Reduce Phase (PayrollReducer)
-
-Reducer performs the following:
-
-### Step 1: Data Separation
-
-* Identify employee record (`emp~`)
-* Collect all payroll records (`pay~`)
+* Groups all values by `employeeId`
+* Transfers related records to the same reducer
+* Sorts intermediate keys internally
 
 ---
 
-### Step 2: Data Enrichment
+## 🔹 6.4 Reduce Phase — PayrollReducer
 
-* Construct:
-
-  * `fullName = firstName + lastName`
-  * `department`
+The reducer performs four main operations.
 
 ---
 
-### Step 3: Aggregation
+### Step 1 — Data Separation
 
-* For each payroll record:
+Separate:
 
-  * Compute:
-
-    ```text
-    totalPay = baseSalary + bonus
-    ```
-* Track:
-
-  ```text
-  maxPay = max(totalPay across all months)
-  ```
+* Employee record (`emp~`)
+* Payroll records (`pay~`)
 
 ---
 
-### Step 4: Output Generation
+### Step 2 — Data Enrichment
 
-* Emit one output record per payroll entry
+Construct:
 
----
+```text
+fullName = firstName + lastName
+```
 
-## 🧠 7. Hadoop Features Used
+Retrieve:
 
-| Feature          | Purpose                              |
-| ---------------- | ------------------------------------ |
-| MultipleInputs   | Handle different input formats       |
-| Reduce-Side Join | Combine datasets by key              |
-| Single Reducer   | Ensure consistent maxPay calculation |
-
----
-
-## ⚠️ 8. Data Validation & Error Handling
-
-### 🧑 Employee File Validation
-
-* Skip:
-
-  * Empty lines
-  * Missing fields
-  * Invalid format
+```text
+department
+```
 
 ---
 
-### 💰 Payroll File Validation
+### Step 3 — Salary Aggregation
 
-* Skip:
+For every payroll transaction:
 
-  * Malformed records
-  * Missing fields
-  * Non-numeric `baseSalary` or `bonus`
+```text
+totalPay = baseSalary + bonus
+```
+
+Track:
+
+```text
+maxPay = maximum(totalPay)
+```
+
+across all months for the same employee.
 
 ---
 
-### ❗ Missing Join Case
+### Step 4 — Final Output Generation
 
-If employee record is missing:
+Emit one enriched output record for every payroll transaction.
+
+---
+
+# 🧠 7. Hadoop Features Used
+
+| Feature               | Purpose                                         |
+| --------------------- | ----------------------------------------------- |
+| MultipleInputs        | Handle multiple datasets with different formats |
+| Reduce-Side Join      | Join datasets using employeeId                  |
+| Hadoop Shuffle & Sort | Group related records automatically             |
+| Single Reducer        | Ensure consistent maxPay calculation            |
+
+---
+
+# ⚠️ 8. Data Validation & Error Handling
+
+## 🧑 Employee File Validation
+
+The mapper skips:
+
+* Empty lines
+* Missing fields
+* Invalid records
+* Corrupted employee entries
+
+---
+
+## 💰 Payroll File Validation
+
+The mapper skips:
+
+* Malformed records
+* Missing values
+* Invalid salary values
+* Non-numeric baseSalary or bonus fields
+
+---
+
+## ❗ Missing Employee Records
+
+If payroll data references a non-existing employee:
 
 ```text
 fullName = UNKNOWN EMPLOYEE
@@ -268,125 +312,253 @@ department = UNKNOWN
 
 ---
 
-## 🔄 9. Combiner Decision
+# 🔄 9. Combiner Decision
 
-❌ **Combiner NOT used**
+## ❌ Combiner Not Used
 
-### Reason:
+### Reason
 
-Reducer logic includes:
+Reducer logic contains:
 
-* Join operation
+* Join operations
 * Data enrichment
-* Global max calculation
+* Global max salary calculations
 
-These operations:
+These operations are:
 
-* Are NOT associative
-* Are NOT commutative
+* NOT associative
+* NOT commutative
 
-➡️ Therefore, using a Combiner may produce incorrect results.
+Therefore, using a Combiner may generate incorrect results.
 
 ---
 
-## 🧩 10. Custom Writable Decision
+# 🧩 10. Custom Writable Decision
 
-❌ **Custom Writable NOT required**
+## ❌ Custom Writable Not Required
 
-### Reason:
+### Reason
 
-* Data is simple (strings and numbers)
+* Data structure is simple
 * Hadoop `Text` type is sufficient
-* No complex objects or multi-field keys needed
+* No complex serialization is needed
+* No composite keys are required
 
 ---
 
-## 🚀 11. Compilation & Execution
+# 🚀 11. Compilation & Execution Guide
 
-### 🔧 Compile
+## 🟢 Step 1 — Open Shared Project Folder
+
+```bash
+cd /media/sf_EmployeePayroll
+```
+
+---
+
+## 🟢 Step 2 — Verify Project Files
+
+```bash
+ls
+```
+
+---
+
+## 🟢 Step 3 — Verify Input Data
+
+```bash
+ls Data
+```
+
+Expected:
+
+```text
+employees.csv
+payroll.csv
+```
+
+---
+
+## 🟢 Step 4 — Remove Old HDFS Input Directory
+
+```bash
+hdfs dfs -rm -r /user/cloudera/payroll/input
+```
+
+---
+
+## 🟢 Step 5 — Create HDFS Input Directory
+
+```bash
+hdfs dfs -mkdir -p /user/cloudera/payroll/input
+```
+
+---
+
+## 🟢 Step 6 — Upload Files to HDFS
+
+```bash
+hdfs dfs -put Data/employees.csv /user/cloudera/payroll/input/
+hdfs dfs -put Data/payroll.csv /user/cloudera/payroll/input/
+```
+
+---
+
+## 🟢 Step 7 — Verify Uploaded Files
+
+```bash
+hdfs dfs -ls /user/cloudera/payroll/input
+```
+
+---
+
+## 🟢 Step 8 — Navigate to Source Code
+
+```bash
+cd Src
+```
+
+---
+
+## 🟢 Step 9 — Compile Java Files
 
 ```bash
 javac -classpath `hadoop classpath` -d . *.java
 ```
 
-### 📦 Create JAR
+---
+
+## 🟢 Step 10 — Create JAR File
 
 ```bash
-jar -cvf payrolljoin.jar task1/*.class
-```
-
-### ▶ Run Job
-
-```bash
-hadoop jar payrolljoin.jar task1.PayrollJoinDriver input/employees.csv input/payroll.csv output
+jar -cvf payroll.jar *
 ```
 
 ---
 
-## 🧪 12. Testing Strategy
+## 🟢 Step 11 — Remove Old HDFS Output Directory
 
-### ✔ Functional Testing
-
-* Validate join correctness
-* Verify totalPay calculation
-* Verify maxPay correctness
+```bash
+hdfs dfs -rm -r /user/cloudera/payroll/output
+```
 
 ---
 
-### ✔ Edge Case Testing
+## 🟢 Step 12 — Run Hadoop MapReduce Job
 
-* Missing employee record
-* Invalid numeric values
+```bash
+hadoop jar payroll.jar com.payrolljoin.PayrollJoinDriver \
+/user/cloudera/payroll/input/employees.csv \
+/user/cloudera/payroll/input/payroll.csv \
+/user/cloudera/payroll/output
+```
+
+---
+
+## 🟢 Step 13 — View Sample Output
+
+```bash
+hdfs dfs -cat /user/cloudera/payroll/output/part-r-00000 | head -20 2>/dev/null
+```
+
+---
+
+## 🟢 Step 14 — Download Output to Shared Folder
+
+```bash
+hdfs dfs -get /user/cloudera/payroll/output /media/sf_EmployeePayroll/payroll_output
+```
+
+The output will be available inside:
+
+```text
+F:\faculty\Level 3 S_2\Introduction to Big Data\Project\HadoopMapReduce\Employee Payroll Join using Hadoop MapReduce\payroll_output
+```
+
+---
+
+# 📁 12. Output Structure
+
+```text
+payroll_output
+│
+├── part-r-00000
+└── _SUCCESS
+```
+
+---
+
+# 🧪 13. Testing Strategy
+
+## ✔ Functional Testing
+
+Validated:
+
+* Join correctness
+* totalPay calculation
+* maxPay calculation
+* Output formatting
+
+---
+
+## ✔ Edge Case Testing
+
+Tested scenarios:
+
+* Missing employee records
+* Invalid salary values
 * Empty lines
-* Partial/malformed records
+* Corrupted records
+* Partial payroll records
 
 ---
 
-### ✔ Scalability Testing
+## ✔ Scalability Testing
 
-* Test using duplicated large datasets
-* Ensure performance consistency
-
----
-
-## 📄 13. Assumptions
-
-1. Input files are CSV formatted
-2. No header rows are included
-3. `employeeId` is unique per employee
-4. Salary and bonus are integers
-5. Output is generated per payroll record
-6. Reducer count is fixed to 1
+* Tested using large duplicated datasets
+* Verified Hadoop processing consistency
+* Confirmed successful processing of datasets larger than 1GB
 
 ---
 
-## 📦 14. Deliverables
+# 📄 14. Assumptions
+
+1. Input files are CSV formatted.
+2. Input files do not contain header rows.
+3. employeeId is unique in employee records.
+4. Salary and bonus values are numeric.
+5. One output row is generated for every payroll transaction.
+6. Reducer count is fixed to 1.
+
+---
+
+# 📦 15. Deliverables
 
 * ✅ Java Source Code
 * ✅ README Documentation
 * ✅ Sample Input Files
-* ✅ Sample Output File
+* ✅ Sample Output Files
 * ✅ Assumptions File
-* ✅ Well-Commented Code
+* ✅ Fully Commented Code
 
 ---
 
-## 💡 15. Key Design Highlights
+# 💡 16. Key Design Highlights
 
-* Clean **Reduce-Side Join implementation**
-* Efficient handling of heterogeneous datasets
-* Strong **data validation strategy**
-* Modular and maintainable code structure
-* Fully aligned with **Hadoop best practices**
-
----
-
-## 👨‍💻 16. Author
-
-Developed as part of a **Big Data / Hadoop MapReduce academic project**, focusing on:
-
-* Data integration
-* Distributed processing
-* Scalable analytics
+* Clean Reduce-Side Join implementation
+* Efficient processing of heterogeneous datasets
+* Strong validation and error handling
+* Modular and maintainable architecture
+* Hadoop best practices applied
+* Scalable distributed processing solution
 
 ---
+
+# 👨‍💻 17. Author
+
+Developed as part of a Big Data / Hadoop MapReduce academic project focused on:
+
+* Distributed data processing
+* Hadoop ecosystem concepts
+* Large-scale data integration
+* Scalable analytics systems
