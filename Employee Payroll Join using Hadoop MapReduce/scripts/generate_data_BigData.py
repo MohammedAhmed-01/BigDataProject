@@ -1,3 +1,5 @@
+# python "F:\faculty\Level 3 S_2\Introduction to Big Data\Project\HadoopMapReduce\Employee Payroll Join using Hadoop MapReduce\scripts\generate_data_BigData.py" 
+# --employees 100 --payroll-records 1000 --output-dir sample
 import argparse
 import csv
 import os
