@@ -1,0 +1,2856 @@
+person_id,age,income,employment_status,education_level
+P000000001,39,59800,Unemployed,Bachelor
+P000000002,35,59100,Self-Employed,Bachelor
+P000000003,31,55000,Employed,Master
+P000000004,31,27600,Retired,High School
+P000000005,23,29300,Student,Master
+P000000006,29,30500,Student,Associate
+P000000007,26,52700,Self-Employed,Master
+P000000008,49,32400,Employed,High School
+P000000009,41,48600,Employed,Bachelor
+P000000010,27,25600,Employed,High School
+P000000011,18,23000,Student,Bachelor
+P000000012,43,50100,Employed,Bachelor
+P000000013,25
+P000000014,35,65400,Employed,Master
+P000000015,36,50500,Self-Employed,Bachelor
+P000000016,39,39100,Self-Employed,Associate
+P000000017,23,18900,Student,Bachelor
+P000000018,35,55400,Self-Employed,Bachelor
+P000000019,42,71300,Self-Employed,Master
+P000000020,61,33800,Employed,Associate
+P000000021,47,40000,Employed,High School
+P000000022,45,93400,Employed,PhD
+P000000023,28,64900,Student,PhD
+P000000024,24,20300,Employed,Bachelor
+P000000025,67,38400,Retired,Associate
+P000000026,57,49000,Employed,Bachelor
+P000000027,26,51700,Self-Employed,Master
+P000000028,32,40900,Employed,Bachelor
+P000000029,25,N/A,Employed,Bachelor
+P000000030,44,67800,Self-Employed,Master
+P000000031,40,58100,Employed,Master
+P000000032,48,76200,Self-Employed,Master
+P000000033,31,55500,Employed,Master
+P000000034,34,47400,Employed,Master
+P000000035,37,61200,Employed,Master
+P000000036,38,44500,Unemployed,Bachelor
+P000000037,38,69400,Retired,Master
+P000000038,31,26600,Employed,High School
+P000000039,50,68600,Employed,Master
+P000000040,50,102200,Employed,PhD
+P000000041,55,83400,Employed,PhD
+P000000042,32,38200,Employed,Bachelor
+P000000043,38,62900,Self-Employed,Master
+P000000044,42,52100,Employed,Bachelor
+P000000045,53,33400,Employed,High School
+P000000046,34,30700,Employed,Associate
+P000000047,50,59900,Unemployed,Bachelor
+P000000048,60,46000,Self-Employed,Bachelor
+P000000049,47,84700,Retired,Master
+P000000050,65,31600,Self-Employed,High School
+P000000051,41,69000,Self-Employed,Master
+P000000052,42,73800,Unemployed,Master
+P000000053,49,65500,Employed,Master
+P000000054,46,66300,Employed,Master
+P000000055,41,57000,Unemployed,Bachelor
+P000000056,35,61100,Employed,Master
+P000000057,25
+P000000058,40,57800,Unemployed,Bachelor
+P000000059,41,29300,Unemployed,High School
+P000000060,48,82300,Unemployed,Master
+P000000061,33,43100,Student,Bachelor
+P000000062,70,47200,Retired,Bachelor
+P000000063,36,47300,Unemployed,Associate
+P000000064,43,75500,Employed,Master
+P000000065,36,57700,Employed,Master
+P000000066,43,37200,Self-Employed,High School
+P000000067,29,27800,Employed,Associate
+P000000068,20,15300,Employed,Associate
+P000000069,45,93400,Self-Employed,PhD
+P000000070,54,57600,Self-Employed,Bachelor
+P000000071,25,38700,Student,Bachelor
+P000000072,48,57500,Unemployed,Bachelor
+P000000073,43,36800,Employed,High School
+P000000074,19,14800,Student,High School
+P000000075,73,54500,Retired,Master
+P000000076,42,59700,Employed,Bachelor
+P000000077,22,27600,Student,Master
+P000000078,25,58600,Employed,PhD
+P000000079,40,53700,Employed,Bachelor
+P000000080,49,86400,Employed,Master
+P000000081,39,68500,Employed,Master
+P000000082,20,16500,Employed,Associate
+P000000083,45,50500,Retired,Bachelor
+P000000084,-5,3000,Employed,Bachelor
+P000000085,47,32400,Student,High School
+P000000086,60,36200,Employed,Associate
+P000000087,46,40500,Employed,Associate
+P000000088,65,28000,Self-Employed,High School
+P000000089,59,41300,Employed,Bachelor
+P000000090,54,43100,Employed,High School
+P000000091,40,51300,Employed,Bachelor
+P000000092,53,65400,Self-Employed,Bachelor
+P000000093,19,16000,Student,Associate
+P000000094,44,91100,Employed,PhD
+P000000095,59,27600,Retired,High School
+P000000096,35,77800,Employed,PhD
+P000000097,28,21900,Employed,High School
+P000000098,43,73000,Employed,PhD
+P000000099,46,82400,Employed,Master
+P000000100,53,79000,Unemployed,PhD
+P000000101,22,22600,Student,Bachelor
+P000000102,36,72200,Employed,Master
+P000000103,33,50000,Student,Master
+P000000104,20,30100,Unemployed,Master
+P000000105,30,43600,Employed,Bachelor
+P000000106,27,42500,Self-Employed,Master
+P000000107,44,39200,Student,Associate
+P000000108,41,54800,Self-Employed,Bachelor
+P000000109,41,54200,Employed,Bachelor
+P000000110,49,43500,Employed,Associate
+P000000111,50,75600,Self-Employed,Master
+P000000112,47,53700,Unemployed,Bachelor
+P000000113,45,59800,Employed,Bachelor
+P000000114,38,45600,Employed,Bachelor
+P000000115,19,36700,Employed,PhD
+P000000116,49,66500,Student,Bachelor
+P000000117,35,51200,Employed,Bachelor
+P000000118,39,92100,Unemployed,PhD
+P000000119,42,37200,Employed,Associate
+P000000120,60,33600,Unemployed,High School
+P000000121,38,79500,Unemployed,PhD
+P000000122,44,29900,Retired,High School
+P000000123,22,30900,Student,Master
+P000000124,39,30800,Employed,High School
+P000000125,46,67500,Unemployed,Master
+P000000126,26,38600,Retired,Bachelor
+P000000127,35,88100,Self-Employed,PhD
+P000000128,50,85600,Retired,PhD
+P000000129,62,31400,Retired,High School
+P000000130,29,63700,Employed,PhD
+P000000131,43,32100,Employed,High School
+P000000132,47,64300,Employed,Master
+P000000133,40,52100,Employed,Bachelor
+P000000134,61,29400,Employed,High School
+P000000135,21,19500,Unemployed,Associate
+P000000136,25
+P000000137,72,88200,Self-Employed,PhD
+P000000138,35,31700,Employed,High School
+P000000139,54,93900,Unemployed,PhD
+P000000140,34,50000,Self-Employed,Master
+P000000141,48,53600,Self-Employed,Bachelor
+P000000142,49,61200,Employed,Bachelor
+P000000143,28,58200,Unemployed,PhD
+P000000144,47,77000,Student,Master
+P000000145,50,76000,Self-Employed,Master
+P000000146,37,45000,Student,Bachelor
+P000000147,51,71300,Unemployed,Master
+P000000148,49,65700,Employed,Bachelor
+P000000149,40,67500,Employed,Master
+P000000150,44,59300,Employed,Bachelor
+P000000151,47,57800,Employed,Bachelor
+P000000152,44,74600,Unemployed,Master
+P000000153,42,50900,Employed,Bachelor
+P000000154,26,42500,Employed,Master
+P000000155,22,22600,Student,Bachelor
+P000000156,30,24400,Self-Employed,High School
+P000000157,45,82100,Employed,Master
+P000000158,37,88000,Student,PhD
+P000000159,54,90600,Employed,PhD
+P000000160,39,55500,Employed,Bachelor
+P000000161,52,65300,Employed,Bachelor
+P000000162,35,39600,Employed,Associate
+P000000163,65,48700,Retired,Bachelor
+P000000164,28,26500,Student,High School
+P000000165,37,49600,Employed,Bachelor
+P000000166,33,34700,Student,Associate
+P000000167,29,62000,Employed,PhD
+P000000168,44,56300,Employed,Bachelor
+P000000169,35,62500,Employed,Master
+P000000170,49,58000,Employed,Bachelor
+P000000171,25,N/A,Employed,Bachelor
+P000000172,39,47000,Student,Associate
+P000000173,45,50600,Employed,Bachelor
+P000000174,40,38100,Employed,High School
+P000000175,41,44500,Student,Bachelor
+P000000176,26,30500,Unemployed,Associate
+P000000177,40,71400,Unemployed,Master
+P000000178,41,44900,Self-Employed,Bachelor
+P000000179,42,41700,Retired,Associate
+P000000180,40,35400,Employed,High School
+P000000181,19,13700,Student,High School
+P000000182,49,46700,Employed,Associate
+P000000183,21,21600,Student,Bachelor
+P000000184,45,53400,Employed,Bachelor
+P000000185,46,105100,Unemployed,PhD
+P000000186,65,50900,Self-Employed,Bachelor
+P000000187,42,67600,Employed,Master
+P000000188,38,43000,Self-Employed,Associate
+P000000189,51,60800,Employed,Bachelor
+P000000190,38,48000,Employed,Bachelor
+P000000191,42,47000,Employed,Associate
+P000000192,twentyfive,3000,Employed,Bachelor
+P000000193,24,25600,Student,Master
+P000000194,44,64700,Employed,Master
+P000000195,26,53300,Self-Employed,Master
+
+P000000197,31,43400,Employed,Bachelor
+P000000198,42,35400,Retired,Associate
+P000000199,24,17800,Employed,Associate
+P000000200,54,41800,Employed,Associate
+P000000201,41,55100,Unemployed,Bachelor
+P000000202,58,44000,Student,Bachelor
+P000000203,44,48900,Employed,Bachelor
+P000000204,42,75500,Employed,Master
+P000000205,67,77500,Retired,PhD
+P000000206,51,43700,Employed,Associate
+P000000207,39,37000,Self-Employed,Associate
+P000000208,24,24500,Unemployed,Bachelor
+P000000209,36,48700,Retired,Bachelor
+P000000210,38,29700,Employed,High School
+P000000211,50,87400,Employed,PhD
+P000000212,32,24400,Student,High School
+P000000213,48,47900,Employed,Associate
+P000000214,37,59400,Employed,Bachelor
+P000000215,58,39500,Retired,Associate
+P000000216,46,34900,Employed,High School
+P000000217,37,46600,Unemployed,Associate
+P000000218,33,34700,Employed,Bachelor
+P000000219,46,33700,Employed,High School
+P000000220,37,77900,Unemployed,PhD
+P000000221,35,75100,Employed,PhD
+P000000222,49,82900,Self-Employed,Master
+P000000223,32,55800,Employed,PhD
+P000000224,25
+P000000225,35,66000,Employed,Master
+P000000226,-5,3000,Employed,Bachelor
+P000000227,30,32200,Employed,Associate
+P000000228,30,45000,Employed,Master
+P000000229,36,29500,Retired,High School
+P000000230,37,65000,Employed,Master
+P000000231,46,49300,Unemployed,Associate
+P000000232,42,36600,Employed,Associate
+P000000233,43,60600,Retired,Master
+P000000234,42,81500,Unemployed,PhD
+P000000235,46,60500,Unemployed,Bachelor
+P000000236,36,72600,Employed,PhD
+P000000237,30,65000,Employed,PhD
+P000000238,66,65300,Employed,Master
+P000000239,42,56500,Self-Employed,Bachelor
+P000000240,33,40800,Employed,Bachelor
+P000000241,35,33200,Retired,High School
+P000000242,37,37400,Employed,High School
+P000000243,38,72500,Employed,PhD
+P000000244,48,34900,Student,High School
+P000000245,48,67000,Unemployed,Master
+P000000246,45,64500,Retired,Bachelor
+P000000247,38,60300,Employed,Master
+P000000248,34,43700,Employed,Bachelor
+P000000249,27,54800,Student,Master
+P000000250,32,40100,Employed,Bachelor
+P000000251,46,39000,Self-Employed,High School
+P000000252,26,46400,Student,Master
+P000000253,63,71900,Retired,PhD
+P000000254,29,28200,Employed,Associate
+P000000255,54,70000,Employed,Master
+P000000256,32,33100,Student,Bachelor
+P000000257,54,79500,Employed,Master
+P000000258,32,59200,Retired,PhD
+P000000259,30,32400,Employed,Bachelor
+P000000260,29,68300,Self-Employed,PhD
+P000000261,38,71900,Employed,PhD
+P000000262,49,51300,Employed,Associate
+P000000263,55,42100,Self-Employed,Bachelor
+P000000264,61,34000,Unemployed,Associate
+P000000265,31,57300,Employed,PhD
+P000000266,24,30800,Student,PhD
+P000000267,32,53900,Retired,Master
+P000000268,52,59000,Employed,Bachelor
+P000000269,30,53800,Employed,Master
+P000000270,70,48400,Self-Employed,Bachelor
+P000000271,23,18700,Unemployed,Bachelor
+P000000272,37,37400,Employed,Associate
+P000000273,41,45700,Employed,Bachelor
+P000000274,23,27400,Employed,Master
+P000000275,twentyfive,3000,Employed,Bachelor
+P000000276,35,33100,Employed,High School
+P000000277,61,66500,Employed,Master
+P000000278,35,48600,Employed,Bachelor
+P000000279,28,32600,Employed,Bachelor
+P000000280,26,36300,Employed,Bachelor
+P000000281,21,25200,Unemployed,Bachelor
+P000000282,37,47400,Unemployed,Associate
+P000000283,52,57700,Employed,Bachelor
+P000000284,54,100400,Employed,PhD
+P000000285,45,86200,Employed,Master
+P000000286,33,25900,Student,High School
+P000000287,20,32200,Student,PhD
+P000000288,57,65700,Employed,Master
+P000000289,62,49700,Retired,Bachelor
+P000000290,48,39900,Unemployed,Associate
+P000000291,61,43400,Employed,Associate
+P000000292,30,54200,Employed,PhD
+P000000293,35,40000,Unemployed,Associate
+P000000294,29,24300,Employed,High School
+P000000295,30,34100,Employed,Bachelor
+P000000296,46,81000,Self-Employed,Master
+P000000297,59,60400,Employed,Master
+P000000298,40,58100,Employed,Bachelor
+P000000299,48,77400,Employed,Master
+P000000300,50,56600,Employed,Bachelor
+P000000301,60,36700,Retired,Associate
+P000000302,44,37900,Self-Employed,High School
+P000000303,49,64200,Employed,Bachelor
+P000000304,40,35400,Unemployed,Associate
+P000000305,38,88200,Retired,PhD
+P000000306,43,45600,Student,Bachelor
+P000000307,43,46600,Student,Bachelor
+P000000308,39,46200,Retired,Bachelor
+P000000309,24,20000,Student,Bachelor
+P000000310,45,42900,Employed,Associate
+P000000311,24,37900,Student,PhD
+P000000312,38,56600,Employed,Bachelor
+P000000313,41,55200,Employed,Bachelor
+P000000314,27,60900,Student,PhD
+P000000315,44,31400,Retired,High School
+P000000316,34,34500,Employed,Bachelor
+P000000317,26,22800,Employed,High School
+P000000318,44,46200,Employed,Associate
+P000000319,29,39200,Student,Bachelor
+P000000320,45,41900,Employed,Associate
+P000000321,31,43200,Retired,Bachelor
+P000000322,48,95400,Unemployed,PhD
+P000000323,50,77200,Employed,Master
+P000000324,43,43100,Self-Employed,Associate
+P000000325,28,45900,Employed,Master
+P000000326,26,53600,Self-Employed,Master
+P000000327,29,52300,Employed,Master
+P000000328,47,75500,Employed,Master
+P000000329,44,70400,Self-Employed,Master
+P000000330,65,60900,Retired,Master
+P000000331,46,55300,Retired,Bachelor
+P000000332,45,64100,Student,Bachelor
+P000000333,51,53000,Student,Bachelor
+P000000334,47,64800,Retired,Master
+P000000335,45,59400,Employed,Bachelor
+P000000336,39,59800,Employed,Bachelor
+P000000337,48,44900,Employed,Associate
+P000000338,47,43800,Employed,Associate
+P000000339,54,42300,Employed,Associate
+P000000340,26,49000,Self-Employed,Master
+P000000341,42,39900,Retired,Associate
+P000000342,32,42800,Unemployed,Bachelor
+P000000343,48,55500,Unemployed,Bachelor
+P000000344,40,59200,Employed,Bachelor
+P000000345,46,56200,Unemployed,Bachelor
+P000000346,38,71500,Employed,Master
+P000000347,55,28100,Employed,High School
+P000000348,58,42800,Employed,Bachelor
+P000000349,33,40300,Employed,Bachelor
+P000000350,28,39100,Employed,Bachelor
+P000000351,64,45100,Retired,Bachelor
+P000000352,43,36400,Employed,High School
+P000000353,38,34200,Student,High School
+P000000354,32,49800,Student,Master
+P000000355,38,89700,Employed,PhD
+P000000356,21,32800,Student,PhD
+P000000357,26,43500,Self-Employed,Master
+P000000358,46,74300,Unemployed,Master
+P000000359,22,28500,Unemployed,Master
+P000000360,47,47700,Employed,Associate
+P000000361,38,59100,Self-Employed,Master
+P000000362,35,76800,Retired,Master
+P000000363,42,46700,Unemployed,Bachelor
+P000000364,34,41100,Employed,Bachelor
+P000000365,41,46200,Student,Bachelor
+P000000366,39,53800,Self-Employed,Bachelor
+P000000367,33,59500,Employed,PhD
+P000000368,25,66300,Employed,PhD
+P000000369,33,43000,Student,Bachelor
+P000000370,50,59300,Unemployed,Bachelor
+P000000371,23,29200,Student,Master
+P000000372,48,105700,Employed,PhD
+P000000373,38,32700,Employed,High School
+P000000374,67,66300,Retired,Master
+P000000375,30,57100,Self-Employed,PhD
+P000000376,45,56300,Self-Employed,Bachelor
+P000000377,44,46700,Employed,Bachelor
+P000000378,42,59400,Employed,Bachelor
+P000000379,33,50400,Employed,Master
+P000000380,49,71200,Student,Master
+P000000381,55,60600,Employed,Master
+P000000382,25,38300,Student,Bachelor
+P000000383,27,45300,Self-Employed,Master
+P000000384,54,104400,Employed,PhD
+P000000385,46,99700,Self-Employed,PhD
+P000000386,51,79300,Employed,PhD
+P000000387,56,47300,Employed,Bachelor
+P000000388,28,25300,Unemployed,High School
+P000000389,32,50800,Employed,Master
+P000000390,25
+P000000391,38,33500,Employed,High School
+P000000392,35,44200,Unemployed,Bachelor
+P000000393,20,16100,Unemployed,Associate
+P000000394,46,59900,Self-Employed,Bachelor
+P000000395,41,31400,Student,High School
+P000000396,53,80800,Employed,Master
+P000000397,37,70000,Self-Employed,Master
+P000000398,57,54600,Employed,Bachelor
+P000000399,31,36900,Self-Employed,Bachelor
+P000000400,36,44700,Student,Bachelor
+P000000401,34,34400,Employed,Associate
+P000000402,28,22700,Retired,High School
+P000000403,29,42900,Employed,Bachelor
+P000000404,25,N/A,Employed,Bachelor
+P000000405,55,30500,Employed,High School
+P000000406,41,34200,Employed,High School
+P000000407,48,100600,Self-Employed,PhD
+P000000408,71,43200,Self-Employed,Bachelor
+P000000409,43,65900,Student,Master
+P000000410,26,23300,Unemployed,High School
+P000000411,41,58300,Employed,Bachelor
+P000000412,21,19700,Student,Bachelor
+P000000413,25,33700,Employed,Bachelor
+P000000414,36,58900,Employed,Master
+P000000415,20,15400,Unemployed,High School
+P000000416,60,41400,Retired,Associate
+P000000417,42,59200,Employed,Bachelor
+P000000418,28,42400,Unemployed,Bachelor
+P000000419,25,36500,Employed,Bachelor
+P000000420,40,45800,Employed,Associate
+P000000421,61,34100,Employed,Associate
+P000000422,45,50200,Retired,Bachelor
+P000000423,25,36900,Retired,Bachelor
+P000000424,46,53100,Self-Employed,Bachelor
+P000000425,29,53700,Employed,Master
+P000000426,33,34800,Employed,Associate
+P000000427,27,41200,Employed,Bachelor
+P000000428,53,51900,Employed,Bachelor
+P000000429,49,105100,Retired,PhD
+P000000430,40,56100,Employed,Bachelor
+P000000431,30,43100,Self-Employed,Master
+P000000432,64,63100,Self-Employed,Master
+P000000433,59,70500,Retired,Master
+P000000434,21,31500,Student,Master
+P000000435,36,62600,Retired,Master
+P000000436,43,82200,Employed,PhD
+P000000437,35,29900,Student,High School
+P000000438,48,51300,Self-Employed,Bachelor
+P000000439,43,63600,Employed,Master
+P000000440,44,45100,Employed,Bachelor
+P000000441,41,37200,Retired,Associate
+P000000442,33,39100,Student,Bachelor
+P000000443,33,34900,Employed,Associate
+P000000444,33,52600,Employed,Master
+P000000445,57,64500,Unemployed,Master
+P000000446,33,50700,Retired,Master
+P000000447,36,65800,Employed,Master
+P000000448,37,72900,Retired,PhD
+P000000449,43,33800,Employed,High School
+P000000450,35,69500,Employed,Master
+P000000451,39,85800,Employed,PhD
+P000000452,34,34000,Self-Employed,Bachelor
+P000000453,44,71700,Retired,Master
+P000000454,39,35900,Employed,High School
+P000000455,47,82700,Unemployed,Master
+P000000456,27,42500,Self-Employed,Bachelor
+P000000457,54,66200,Employed,Master
+P000000458,38,67100,Employed,Master
+P000000459,32,23300,Student,High School
+P000000460,30,55100,Employed,Master
+P000000461,59,71400,Employed,PhD
+P000000462,36,72200,Student,PhD
+P000000463,29,41400,Employed,Bachelor
+P000000464,27,42100,Student,Master
+P000000465,30,48200,Unemployed,Master
+P000000466,51,89800,Employed,PhD
+P000000467,35,72900,Retired,PhD
+P000000468,35,58700,Employed,Bachelor
+P000000469,44,52600,Employed,Bachelor
+P000000470,26,42300,Employed,Master
+P000000471,20,31600,Student,Master
+P000000472,63,45100,Employed,Bachelor
+P000000473,35,51400,Employed,Bachelor
+P000000474,44,52400,Employed,Bachelor
+P000000475,33,34800,Retired,Bachelor
+P000000476,45,43700,Unemployed,Associate
+P000000477,31,21600,Employed,High School
+P000000478,34,22000,Employed,High School
+P000000479,33,35200,Unemployed,Bachelor
+P000000480,28,44500,Employed,Master
+P000000481,44,69700,Student,Master
+P000000482,55,56200,Employed,Master
+P000000483,48,46100,Employed,Associate
+P000000484,53,76000,Employed,Master
+P000000485,46,65000,Employed,Master
+P000000486,48,43200,Self-Employed,Associate
+P000000487,20,29900,Unemployed,Master
+P000000488,48,52900,Employed,Associate
+P000000489,53,42800,Employed,Associate
+P000000490,31,35200,Employed,Bachelor
+P000000491,52,99100,Employed,PhD
+P000000492,22,23600,Unemployed,Bachelor
+P000000493,34,33900,Employed,Bachelor
+P000000494,30,25100,Retired,High School
+P000000495,69,54500,Retired,Bachelor
+P000000496,65,55900,Self-Employed,Master
+P000000497,34,41600,Employed,Bachelor
+P000000498,45,42500,Unemployed,Associate
+P000000499,44,80600,Student,PhD
+P000000500,58,53100,Employed,Bachelor
+P000000501,61,42300,Employed,Bachelor
+P000000502,69,86900,Employed,PhD
+P000000503,49,67300,Employed,Master
+P000000504,22,22500,Employed,Bachelor
+P000000505,44,40200,Unemployed,Associate
+P000000506,20,29600,Employed,Master
+P000000507,38,46600,Employed,Bachelor
+P000000508,42,53300,Employed,Bachelor
+P000000509,42,59100,Retired,Bachelor
+P000000510,28,53100,Employed,Master
+P000000511,59,43400,Self-Employed,Bachelor
+P000000512,25,28000,Employed,Associate
+P000000513,45,48100,Employed,Associate
+P000000514,37,56500,Employed,Bachelor
+P000000515,31,36000,Employed,Bachelor
+P000000516,39,46800,Self-Employed,Associate
+P000000517,33,22000,Employed,High School
+P000000518,42,52700,Self-Employed,Bachelor
+P000000519,19,40500,Employed,PhD
+P000000520,23,16200,Unemployed,Associate
+P000000521,26,69800,Retired,PhD
+P000000522,34,39300,Employed,Bachelor
+P000000523,39,28800,Unemployed,High School
+P000000524,25
+P000000525,36,49100,Employed,Bachelor
+P000000526,69,53500,Retired,Bachelor
+P000000527,23,34400,Employed,PhD
+P000000528,39,55700,Retired,Bachelor
+P000000529,40,37000,Employed,High School
+P000000530,39,31200,Student,High School
+P000000531,35,72900,Student,PhD
+P000000532,55,50400,Employed,Bachelor
+P000000533,52,61500,Student,Bachelor
+P000000534,25,47700,Self-Employed,Master
+P000000535,51,93600,Unemployed,PhD
+P000000536,40,56100,Unemployed,Bachelor
+P000000537,39,48000,Employed,Bachelor
+P000000538,52,38600,Student,High School
+P000000539,34,24300,Employed,High School
+P000000540,26,67900,Student,PhD
+P000000541,58,43600,Employed,Associate
+P000000542,36,52600,Retired,Bachelor
+P000000543,73,29200,Self-Employed,High School
+P000000544,27,44100,Unemployed,Master
+P000000545,29,28400,Unemployed,Associate
+P000000546,47,42600,Student,Associate
+P000000547,33,40900,Retired,Bachelor
+P000000548,31,54800,Employed,Master
+P000000549,23,37900,Student,PhD
+P000000550,36,58800,Student,Bachelor
+P000000551,24,23600,Student,Bachelor
+P000000552,24,18700,Student,Bachelor
+P000000553,47,74600,Self-Employed,Master
+P000000554,20,23100,Student,Bachelor
+P000000555,55,40800,Employed,Bachelor
+P000000556,39,51300,Retired,Bachelor
+
+P000000558,37,57000,Employed,Bachelor
+P000000559,57,28200,Employed,High School
+P000000560,31,58700,Employed,PhD
+P000000561,33,32800,Unemployed,Bachelor
+P000000562,24,37400,Unemployed,PhD
+P000000563,54,66500,Employed,Bachelor
+P000000564,33,43200,Student,Bachelor
+P000000565,58,39600,Employed,Associate
+P000000566,33,23900,Retired,High School
+P000000567,35,31600,Retired,High School
+P000000568,32,45500,Employed,Master
+P000000569,47,74900,Employed,Master
+P000000570,34,51500,Retired,Master
+P000000571,57,86200,Self-Employed,PhD
+P000000572,59,33700,Employed,High School
+P000000573,39,31900,Employed,High School
+P000000574,45,65700,Unemployed,Master
+P000000575,18,15100,Student,High School
+P000000576,46,60400,Unemployed,Bachelor
+P000000577,24,21000,Student,Bachelor
+P000000578,29,49100,Self-Employed,Master
+P000000579,36,59600,Unemployed,Bachelor
+P000000580,56,38800,Student,Associate
+P000000581,35,56800,Unemployed,Bachelor
+P000000582,36,47800,Unemployed,Bachelor
+P000000583,40,37700,Employed,Associate
+P000000584,23,29800,Unemployed,Master
+P000000585,52,72300,Employed,Master
+P000000586,32,36500,Unemployed,Bachelor
+P000000587,45,41400,Employed,High School
+P000000588,31,25600,Student,High School
+P000000589,51,65200,Employed,Master
+P000000590,31,38500,Employed,Bachelor
+P000000591,38,57200,Self-Employed,Bachelor
+P000000592,43,58600,Retired,Bachelor
+P000000593,45,58300,Retired,Bachelor
+P000000594,43,58500,Employed,Master
+P000000595,twentyfive,3000,Employed,Bachelor
+P000000596,46,85100,Self-Employed,Master
+P000000597,45,65600,Unemployed,Bachelor
+P000000598,twentyfive,3000,Employed,Bachelor
+P000000599,45,82600,Self-Employed,Master
+P000000600,46,55100,Unemployed,Bachelor
+
+P000000602,36,64000,Employed,Master
+P000000603,61,68500,Self-Employed,Master
+P000000604,36,91500,Employed,PhD
+P000000605,30,52200,Unemployed,PhD
+P000000606,34,48100,Employed,Master
+P000000607,41,51200,Retired,Bachelor
+P000000608,27,51900,Unemployed,Master
+P000000609,36,42300,Unemployed,Associate
+P000000610,30,52900,Self-Employed,Master
+P000000611,34,56500,Employed,Master
+P000000612,51,72900,Self-Employed,Master
+P000000613,36,59200,Student,Master
+P000000614,55,46900,Unemployed,Bachelor
+P000000615,44,46300,Unemployed,Associate
+P000000616,70,71000,Self-Employed,Master
+P000000617,40,50400,Unemployed,Bachelor
+P000000618,43,90800,Employed,PhD
+P000000619,44,77100,Employed,PhD
+P000000620,22,22000,Employed,Bachelor
+P000000621,72,67900,Employed,PhD
+P000000622,26,51900,Employed,Master
+P000000623,34,29500,Self-Employed,Associate
+P000000624,31,41300,Self-Employed,Bachelor
+P000000625,32,50100,Employed,Master
+P000000626,28,39700,Employed,Bachelor
+P000000627,41,59200,Retired,Bachelor
+P000000628,43,58300,Self-Employed,Bachelor
+P000000629,33,37800,Unemployed,Bachelor
+P000000630,29,37200,Employed,Bachelor
+P000000631,37,63500,Employed,Master
+P000000632,23,15200,Student,High School
+P000000633,64,39900,Retired,Associate
+P000000634,52,33300,Retired,High School
+P000000635,42,47900,Employed,Bachelor
+P000000636,65,62000,Retired,Master
+P000000637,27,39900,Employed,Bachelor
+P000000638,21,32600,Student,Master
+P000000639,59,65800,Employed,Master
+P000000640,36,57500,Employed,Bachelor
+P000000641,29,50500,Retired,Master
+P000000642,49,35000,Employed,High School
+P000000643,28,42900,Employed,Bachelor
+P000000644,31,33200,Unemployed,Associate
+P000000645,36,51500,Employed,Bachelor
+P000000646,47,37800,Employed,High School
+P000000647,26,26600,Employed,Associate
+P000000648,37,57600,Retired,Master
+P000000649,52,39600,Self-Employed,Associate
+P000000650,56,74200,Employed,PhD
+P000000651,72,29300,Employed,High School
+P000000652,38,46900,Retired,Bachelor
+P000000653,49,61100,Student,Bachelor
+P000000654,19,30700,Employed,Master
+P000000655,28,54700,Employed,PhD
+P000000656,60,39000,Employed,Associate
+P000000657,39,55400,Employed,Bachelor
+P000000658,39,78400,Employed,PhD
+P000000659,54,34300,Self-Employed,High School
+P000000660,35,47600,Employed,Associate
+P000000661,29,44500,Unemployed,Master
+P000000662,42,37100,Student,High School
+P000000663,38,48000,Employed,Bachelor
+P000000664,40,71600,Employed,Master
+P000000665,38,81800,Employed,PhD
+P000000666,50,68800,Employed,Master
+P000000667,23,34800,Unemployed,PhD
+P000000668,42,61200,Employed,Master
+P000000669,33,37200,Student,Bachelor
+P000000670,35,49400,Student,Bachelor
+P000000671,52,79600,Student,Master
+P000000672,26,61300,Student,PhD
+P000000673,47,69200,Unemployed,Master
+P000000674,19,32800,Student,Master
+P000000675,36,47800,Employed,Bachelor
+P000000676,40,59500,Student,Bachelor
+P000000677,44,58500,Unemployed,Master
+P000000678,36,46700,Employed,Bachelor
+P000000679,36,83900,Retired,PhD
+P000000680,43,59400,Employed,Bachelor
+P000000681,19,24400,Unemployed,Bachelor
+P000000682,51,78700,Student,Master
+P000000683,48,71200,Unemployed,Master
+P000000684,64,50500,Self-Employed,Bachelor
+P000000685,54,88500,Student,PhD
+P000000686,25
+P000000687,33,67600,Employed,PhD
+P000000688,21,19900,Student,Bachelor
+P000000689,36,70500,Student,Master
+P000000690,47,105100,Employed,PhD
+P000000691,30,28500,Retired,Associate
+P000000692,37,58100,Employed,Bachelor
+P000000693,32,43600,Employed,Bachelor
+P000000694,38,85700,Self-Employed,PhD
+P000000695,35,42700,Unemployed,Associate
+P000000696,51,72800,Employed,Master
+P000000697,36,44900,Employed,Bachelor
+P000000698,48,73800,Employed,Master
+P000000699,59,81600,Unemployed,PhD
+P000000700,22,27000,Unemployed,Master
+P000000701,24,27500,Student,Master
+P000000702,55,36900,Employed,Associate
+P000000703,22,20800,Employed,Bachelor
+P000000704,33,40600,Employed,Bachelor
+P000000705,21,22800,Unemployed,Bachelor
+P000000706,46,59600,Unemployed,Bachelor
+P000000707,24,27400,Student,Master
+P000000708,41,80800,Unemployed,PhD
+P000000709,23,19900,Unemployed,Associate
+P000000710,26,36100,Employed,Bachelor
+P000000711,28,67800,Employed,PhD
+P000000712,40,48400,Self-Employed,Bachelor
+P000000713,41,64600,Student,Master
+P000000714,37,44700,Employed,Bachelor
+P000000715,37,68800,Self-Employed,Master
+P000000716,38,89500,Employed,PhD
+P000000717,48,101500,Retired,PhD
+P000000718,37,60100,Self-Employed,Master
+P000000719,31,31800,Employed,Associate
+P000000720,38,80200,Retired,PhD
+P000000721,28,36700,Employed,Bachelor
+P000000722,55,40800,Employed,Bachelor
+P000000723,24,36000,Student,PhD
+P000000724,40,59600,Self-Employed,Bachelor
+P000000725,42,77500,Employed,Master
+P000000726,26,30800,Unemployed,Associate
+P000000727,54,81100,Self-Employed,Master
+P000000728,44,73800,Retired,Master
+P000000729,45,75300,Student,Master
+P000000730,23,18000,Employed,Associate
+P000000731,33,35200,Employed,Bachelor
+P000000732,36,39300,Unemployed,Associate
+P000000733,34,55400,Employed,Master
+P000000734,41,34700,Retired,High School
+P000000735,33,27400,Employed,Associate
+P000000736,32,56300,Employed,Master
+P000000737,55,86000,Self-Employed,PhD
+P000000738,51,76200,Employed,Master
+P000000739,55,64100,Self-Employed,Master
+P000000740,75,69700,Employed,PhD
+P000000741,34,37200,Unemployed,Bachelor
+P000000742,37,42900,Employed,Associate
+P000000743,19,20200,Student,Bachelor
+P000000744,41,73900,Student,Master
+P000000745,31,26500,Employed,High School
+P000000746,56,32100,Employed,High School
+P000000747,28,43800,Self-Employed,Master
+P000000748,34,26900,Retired,High School
+P000000749,41,47000,Employed,Bachelor
+P000000750,38,38300,Self-Employed,Associate
+P000000751,51,84800,Employed,Master
+P000000752,27,30900,Employed,Associate
+P000000753,72,47300,Retired,Bachelor
+P000000754,43,55300,Employed,Bachelor
+P000000755,56,34900,Self-Employed,Associate
+P000000756,20,22900,Employed,Bachelor
+P000000757,44,54800,Employed,Bachelor
+P000000758,19,36800,Student,PhD
+P000000759,38,47300,Self-Employed,Associate
+P000000760,32,42000,Unemployed,Master
+P000000761,30,36300,Employed,Bachelor
+P000000762,40,44400,Employed,Associate
+P000000763,23,18000,Student,Associate
+P000000764,42,52400,Retired,Bachelor
+P000000765,22,20000,Unemployed,Bachelor
+P000000766,46,35700,Employed,High School
+P000000767,45,96100,Employed,PhD
+P000000768,52,69400,Retired,Master
+P000000769,37,36100,Employed,High School
+P000000770,29,32900,Unemployed,Bachelor
+P000000771,24,28600,Student,Master
+P000000772,39,78100,Employed,PhD
+P000000773,25,50500,Student,Master
+P000000774,51,46700,Employed,Associate
+P000000775,45,51900,Employed,Associate
+P000000776,-5,3000,Employed,Bachelor
+P000000777,34,45400,Employed,Master
+P000000778,44,52100,Self-Employed,Bachelor
+P000000779,25
+P000000780,29,25000,Retired,High School
+P000000781,30,28100,Employed,Associate
+P000000782,35,34900,Employed,High School
+P000000783,28,50800,Employed,Master
+P000000784,23,25500,Employed,Master
+P000000785,58,70500,Employed,Master
+P000000786,38,52200,Self-Employed,Bachelor
+P000000787,47,64400,Retired,Master
+P000000788,18,25600,Employed,Master
+P000000789,52,41900,Employed,Associate
+P000000790,38,62400,Employed,Master
+P000000791,23,40100,Unemployed,PhD
+P000000792,36,68500,Employed,Master
+P000000793,60,78100,Employed,PhD
+P000000794,44,69400,Self-Employed,Master
+P000000795,39,42100,Employed,Associate
+P000000796,46,50600,Employed,Bachelor
+P000000797,50,59200,Employed,Bachelor
+P000000798,54,71000,Employed,Master
+P000000799,44,35800,Self-Employed,High School
+P000000800,61,64200,Retired,Master
+P000000801,41,91400,Employed,PhD
+P000000802,62,45700,Self-Employed,Bachelor
+P000000803,21,19400,Student,Bachelor
+P000000804,37,57600,Unemployed,Bachelor
+P000000805,53,54100,Employed,Bachelor
+P000000806,19,20600,Unemployed,Bachelor
+P000000807,29,22900,Self-Employed,High School
+P000000808,34,46900,Retired,Master
+P000000809,35,77300,Employed,Master
+P000000810,29,43800,Self-Employed,Master
+P000000811,60,35900,Employed,Associate
+P000000812,44,68900,Retired,Master
+P000000813,49,41600,Unemployed,Associate
+P000000814,42,46500,Unemployed,Bachelor
+P000000815,40,52100,Student,Bachelor
+P000000816,24,22200,Employed,Bachelor
+P000000817,52,38800,Student,High School
+P000000818,65,66100,Retired,Master
+P000000819,26,26600,Employed,High School
+P000000820,29,40000,Self-Employed,Bachelor
+P000000821,46,64100,Employed,Master
+P000000822,46,45400,Employed,Associate
+P000000823,26,58800,Employed,PhD
+P000000824,43,47800,Student,Associate
+P000000825,40,35300,Unemployed,High School
+P000000826,30,40200,Self-Employed,Bachelor
+P000000827,59,43000,Retired,Associate
+P000000828,24,24500,Employed,Master
+P000000829,41,84500,Employed,PhD
+P000000830,53,83400,Self-Employed,Master
+P000000831,45,82200,Student,Master
+P000000832,33,35900,Student,Bachelor
+P000000833,43,37900,Employed,High School
+P000000834,48,75100,Employed,Master
+P000000835,55,50500,Employed,Bachelor
+P000000836,35,37900,Employed,High School
+P000000837,63,54200,Self-Employed,Bachelor
+P000000838,36,72700,Retired,Master
+P000000839,38,53500,Employed,Bachelor
+P000000840,53,34600,Retired,High School
+P000000841,54,40900,Employed,High School
+P000000842,56,46600,Unemployed,Bachelor
+P000000843,30,54600,Student,Master
+P000000844,35,61000,Self-Employed,Master
+P000000845,42,49800,Employed,Bachelor
+P000000846,41,31200,Employed,High School
+P000000847,59,35600,Employed,Associate
+P000000848,35,30000,Employed,High School
+P000000849,47,72500,Student,Master
+P000000850,19,25200,Employed,Master
+P000000851,68,59200,Employed,Master
+P000000852,45,63800,Student,Bachelor
+P000000853,45,58100,Employed,Bachelor
+P000000854,23,32100,Unemployed,Master
+P000000855,30,48000,Employed,Master
+P000000856,48,56700,Self-Employed,Bachelor
+P000000857,34,41400,Employed,Bachelor
+P000000858,54,48000,Employed,Associate
+P000000859,27,33300,Employed,Associate
+
+P000000861,26,38100,Retired,Bachelor
+P000000862,40,70800,Employed,Master
+P000000863,38,55900,Employed,Bachelor
+P000000864,43,46300,Self-Employed,Bachelor
+P000000865,32,69000,Employed,PhD
+P000000866,30,38300,Self-Employed,Bachelor
+P000000867,23,25200,Employed,Master
+P000000868,20,15100,Student,High School
+P000000869,43,86700,Self-Employed,PhD
+P000000870,36,42500,Employed,Associate
+P000000871,37,75300,Retired,Master
+P000000872,48,76700,Employed,Master
+P000000873,46,53500,Student,Bachelor
+P000000874,56,43000,Employed,Bachelor
+P000000875,39,78600,Employed,PhD
+P000000876,60,41900,Student,Bachelor
+P000000877,30,21600,Self-Employed,High School
+P000000878,20,37800,Student,PhD
+P000000879,56,52600,Self-Employed,Bachelor
+P000000880,50,51100,Self-Employed,Bachelor
+P000000881,30,34100,Employed,Associate
+P000000882,29,44100,Employed,Master
+P000000883,43,84000,Employed,PhD
+P000000884,38,75000,Employed,Master
+P000000885,32,34300,Employed,Associate
+P000000886,29,51300,Employed,Master
+P000000887,50,55300,Student,Bachelor
+P000000888,39,50700,Student,Bachelor
+P000000889,40,78200,Retired,PhD
+P000000890,35,81000,Employed,PhD
+P000000891,40,52000,Self-Employed,Bachelor
+P000000892,44,90400,Employed,PhD
+P000000893,44,51200,Employed,Bachelor
+P000000894,60,54900,Retired,Bachelor
+P000000895,33,39300,Employed,Bachelor
+P000000896,39,49100,Employed,Bachelor
+P000000897,41,70600,Employed,Master
+P000000898,21,20600,Student,Bachelor
+P000000899,52,75400,Self-Employed,Master
+P000000900,28,41700,Retired,Bachelor
+P000000901,28,44200,Self-Employed,Master
+P000000902,18,18000,Unemployed,Associate
+P000000903,45,53000,Self-Employed,Associate
+P000000904,28,23200,Employed,High School
+P000000905,35,44600,Self-Employed,Bachelor
+P000000906,32,68800,Employed,PhD
+P000000907,40,58000,Employed,Bachelor
+P000000908,26,45900,Unemployed,Master
+P000000909,-5,3000,Employed,Bachelor
+P000000910,39,41800,Employed,Associate
+P000000911,43,78800,Employed,PhD
+P000000912,34,63700,Self-Employed,PhD
+P000000913,49,68800,Employed,Master
+P000000914,38,55600,Employed,Bachelor
+P000000915,55,70000,Retired,PhD
+P000000916,31,41100,Employed,Bachelor
+P000000917,40,68200,Employed,Master
+P000000918,34,25000,Retired,High School
+P000000919,25
+P000000920,46,57000,Employed,Bachelor
+P000000921,44,35100,Retired,High School
+P000000922,23,15300,Employed,Associate
+P000000923,48,96200,Unemployed,PhD
+P000000924,41,57300,Employed,Bachelor
+P000000925,31,37600,Unemployed,Bachelor
+P000000926,48,39500,Employed,High School
+P000000927,38,63500,Retired,Master
+P000000928,38,47700,Employed,Bachelor
+P000000929,25
+P000000930,21,18600,Student,Associate
+P000000931,39,45100,Employed,Bachelor
+P000000932,23,27400,Student,Master
+P000000933,24,29600,Student,Master
+P000000934,60,66300,Self-Employed,Master
+P000000935,28,52800,Retired,PhD
+P000000936,40,38700,Employed,High School
+P000000937,30,36300,Employed,Bachelor
+P000000938,57,31100,Employed,High School
+P000000939,26,57700,Employed,PhD
+P000000940,27,26700,Self-Employed,High School
+P000000941,52,43100,Employed,High School
+P000000942,28,47400,Retired,Master
+P000000943,29,55900,Employed,Master
+P000000944,38,57400,Student,Bachelor
+P000000945,49,59900,Employed,Bachelor
+P000000946,38,54400,Employed,Bachelor
+P000000947,43,61800,Employed,Master
+P000000948,32,40800,Student,Bachelor
+P000000949,39,54000,Unemployed,Bachelor
+P000000950,31,55500,Employed,PhD
+P000000951,36,42100,Employed,Associate
+P000000952,46,85400,Employed,Master
+P000000953,18,30300,Unemployed,PhD
+P000000954,35,75700,Self-Employed,Master
+P000000955,40,66800,Student,Master
+P000000956,49,66300,Employed,Master
+P000000957,49,51100,Employed,Associate
+P000000958,58,44600,Retired,Bachelor
+P000000959,27,48800,Employed,Master
+P000000960,47,52000,Unemployed,Associate
+P000000961,32,26700,Employed,Associate
+P000000962,36,88300,Self-Employed,PhD
+P000000963,32,23700,Unemployed,High School
+P000000964,27,43000,Employed,Bachelor
+P000000965,33,55000,Employed,PhD
+P000000966,62,27300,Self-Employed,High School
+P000000967,27,39900,Retired,Bachelor
+P000000968,30,33000,Retired,Bachelor
+
+P000000970,46,70900,Self-Employed,Master
+P000000971,34,51700,Employed,Master
+P000000972,49,42200,Student,High School
+P000000973,41,36800,Unemployed,High School
+P000000974,53,81300,Student,Master
+P000000975,32,26300,Retired,Associate
+P000000976,18,18300,Student,Associate
+P000000977,37,29800,Unemployed,High School
+P000000978,51,56400,Self-Employed,Bachelor
+P000000979,45,38400,Retired,High School
+P000000980,30,38700,Retired,Bachelor
+P000000981,21,24500,Employed,Bachelor
+P000000982,48,63700,Retired,Bachelor
+P000000983,31,43500,Employed,Bachelor
+P000000984,24,14200,Student,High School
+P000000985,20,24500,Student,Bachelor
+P000000986,51,55600,Employed,Bachelor
+P000000987,34,43400,Self-Employed,Bachelor
+P000000988,31,24900,Employed,High School
+P000000989,44,58100,Retired,Master
+P000000990,28,31400,Self-Employed,Associate
+P000000991,40,69000,Retired,Master
+P000000992,26,40700,Self-Employed,Bachelor
+P000000993,62,58000,Employed,Master
+P000000994,44,81900,Student,PhD
+P000000995,46,60600,Employed,Bachelor
+P000000996,50,93100,Employed,PhD
+P000000997,26,23800,Student,High School
+P000000998,69,50100,Employed,Bachelor
+P000000999,46,62400,Employed,Bachelor
+P000001000,28,23100,Student,High School
+P000001001,39,80400,Retired,PhD
+P000001002,38,51200,Self-Employed,Bachelor
+P000001003,70,44800,Employed,Bachelor
+P000001004,47,34200,Retired,High School
+P000001005,42,70100,Employed,Master
+P000001006,48,71100,Employed,Master
+P000001007,39,47200,Unemployed,Bachelor
+P000001008,35,61300,Employed,Master
+P000001009,18,24400,Student,Bachelor
+P000001010,21,15400,Unemployed,High School
+P000001011,19,24400,Employed,Master
+P000001012,50,43200,Employed,Associate
+P000001013,36,45800,Student,Bachelor
+P000001014,40,30200,Employed,High School
+P000001015,31,54300,Employed,Master
+P000001016,27,35000,Unemployed,Bachelor
+P000001017,51,84500,Employed,Master
+P000001018,33,63600,Student,PhD
+P000001019,38,55800,Employed,Bachelor
+P000001020,37,52500,Employed,Bachelor
+P000001021,50,77300,Self-Employed,Master
+P000001022,34,52300,Employed,PhD
+
+P000001024,32,29000,Self-Employed,Associate
+P000001025,22,23000,Employed,Bachelor
+P000001026,33,26900,Employed,Associate
+P000001027,34,24800,Employed,High School
+P000001028,46,64200,Employed,Master
+P000001029,53,72800,Unemployed,Master
+P000001030,58,75000,Employed,PhD
+P000001031,34,37300,Self-Employed,Bachelor
+P000001032,39,74300,Unemployed,PhD
+P000001033,52,62300,Student,Bachelor
+P000001034,28,38000,Unemployed,Bachelor
+P000001035,38,30900,Student,High School
+P000001036,32,55100,Student,Master
+P000001037,32,39800,Student,Bachelor
+P000001038,57,41600,Retired,Bachelor
+P000001039,49,49500,Employed,Associate
+P000001040,56,32300,Retired,High School
+P000001041,40,87700,Employed,PhD
+P000001042,62,34700,Retired,High School
+P000001043,23,13000,Student,High School
+P000001044,18,15900,Student,High School
+P000001045,34,42200,Unemployed,Master
+P000001046,25
+P000001047,45,57600,Unemployed,Bachelor
+P000001048,45,85900,Employed,PhD
+P000001049,58,36700,Employed,Associate
+P000001050,-5,3000,Employed,Bachelor
+P000001051,35,58300,Employed,Bachelor
+P000001052,28,27000,Employed,High School
+P000001053,49,53400,Employed,Bachelor
+P000001054,40,59700,Student,Bachelor
+P000001055,55,42800,Employed,Bachelor
+P000001056,23,15300,Student,Associate
+P000001057,51,42600,Self-Employed,Associate
+P000001058,55,75300,Student,PhD
+P000001059,36,91400,Retired,PhD
+P000001060,46,79100,Unemployed,PhD
+P000001061,27,33500,Employed,Bachelor
+P000001062,25,37600,Retired,Bachelor
+P000001063,39,73000,Student,PhD
+P000001064,69,50400,Retired,Bachelor
+P000001065,25,35300,Self-Employed,Bachelor
+P000001066,31,27400,Self-Employed,High School
+P000001067,37,89200,Unemployed,PhD
+P000001068,18,24300,Student,Bachelor
+P000001069,45,73900,Self-Employed,Master
+P000001070,33,42700,Employed,Bachelor
+P000001071,47,75800,Unemployed,Master
+P000001072,22,14200,Student,High School
+P000001073,42,54100,Student,Bachelor
+
+P000001075,41,51100,Self-Employed,Bachelor
+P000001076,43,30100,Employed,High School
+P000001077,31,34000,Retired,Bachelor
+P000001078,47,70600,Employed,Master
+P000001079,27,60100,Retired,PhD
+P000001080,35,85900,Employed,PhD
+P000001081,48,66300,Employed,Bachelor
+P000001082,61,34200,Self-Employed,Associate
+P000001083,22,21900,Student,Bachelor
+P000001084,30,49300,Student,Master
+P000001085,36,70900,Employed,Master
+P000001086,37,61900,Retired,Master
+P000001087,68,50200,Retired,Bachelor
+P000001088,38,76500,Self-Employed,Master
+P000001089,40,89900,Employed,PhD
+P000001090,41,34600,Retired,High School
+P000001091,64,69200,Employed,Master
+P000001092,26,38500,Student,Bachelor
+P000001093,31,40800,Unemployed,Bachelor
+P000001094,25,55600,Employed,Master
+P000001095,34,69400,Self-Employed,PhD
+P000001096,32,55900,Retired,Master
+P000001097,42,56600,Self-Employed,Bachelor
+P000001098,50,66000,Employed,Master
+P000001099,34,33500,Employed,Bachelor
+P000001100,47,89500,Retired,PhD
+P000001101,50,91300,Employed,PhD
+P000001102,38,46700,Employed,Bachelor
+P000001103,27,35100,Employed,Bachelor
+P000001104,36,44600,Unemployed,Bachelor
+P000001105,21,28900,Student,Master
+P000001106,38,38700,Self-Employed,Associate
+P000001107,39,31600,Unemployed,High School
+P000001108,31,43200,Employed,Master
+P000001109,50,59800,Retired,Bachelor
+P000001110,43,29100,Self-Employed,High School
+P000001111,53,81600,Employed,Master
+P000001112,34,66500,Employed,PhD
+P000001113,43,46900,Unemployed,Bachelor
+P000001114,32,42400,Self-Employed,Master
+P000001115,19,36500,Employed,PhD
+P000001116,48,42100,Employed,High School
+P000001117,28,56100,Employed,Master
+P000001118,40,64600,Retired,Master
+P000001119,32,56600,Self-Employed,Master
+P000001120,44,47200,Retired,Associate
+P000001121,47,42000,Employed,High School
+P000001122,37,48000,Retired,Bachelor
+P000001123,37,44600,Employed,Associate
+P000001124,30,24500,Employed,High School
+P000001125,49,77500,Student,Master
+P000001126,69,60800,Self-Employed,Master
+P000001127,45,51000,Retired,Bachelor
+P000001128,46,64100,Self-Employed,Bachelor
+P000001129,51,84100,Retired,Master
+P000001130,39,80800,Employed,PhD
+P000001131,40,49800,Retired,Bachelor
+P000001132,38,37600,Employed,Associate
+P000001133,43,57600,Employed,Bachelor
+P000001134,50,52700,Employed,Bachelor
+P000001135,47,60500,Employed,Bachelor
+P000001136,36,34300,Retired,High School
+P000001137,41,68100,Employed,Master
+P000001138,18,31700,Student,Master
+P000001139,39,62600,Employed,Master
+P000001140,43,54600,Employed,Bachelor
+P000001141,62,27300,Self-Employed,High School
+P000001142,53,83900,Employed,Master
+P000001143,26,36400,Student,Bachelor
+P000001144,32,32700,Employed,Associate
+P000001145,46,56000,Self-Employed,Bachelor
+P000001146,61,48200,Student,Bachelor
+P000001147,40,53500,Student,Bachelor
+P000001148,25,32300,Employed,Associate
+P000001149,31,34000,Employed,Associate
+P000001150,23,32100,Employed,Master
+P000001151,27,35000,Self-Employed,Bachelor
+P000001152,59,55600,Employed,Master
+P000001153,39,87100,Employed,PhD
+P000001154,19,22400,Student,Bachelor
+P000001155,62,29400,Employed,High School
+P000001156,35,63200,Employed,Master
+P000001157,36,53200,Retired,Bachelor
+P000001158,68,63000,Employed,Master
+P000001159,39,76800,Employed,Master
+P000001160,24,30500,Student,Master
+P000001161,42,37200,Employed,Associate
+P000001162,54,44200,Student,Associate
+P000001163,54,42100,Employed,High School
+P000001164,-5,3000,Employed,Bachelor
+P000001165,46,58900,Employed,Bachelor
+P000001166,66,44400,Self-Employed,Bachelor
+P000001167,48,39800,Employed,High School
+P000001168,23,15500,Student,High School
+P000001169,37,44300,Unemployed,Bachelor
+P000001170,46,78000,Self-Employed,Master
+P000001171,64,48600,Retired,Bachelor
+P000001172,43,42800,Self-Employed,Associate
+P000001173,43,31300,Unemployed,High School
+P000001174,36,50200,Self-Employed,Bachelor
+P000001175,21,19300,Unemployed,Bachelor
+P000001176,47,66400,Employed,Master
+P000001177,32,27800,Employed,Associate
+P000001178,37,39100,Retired,Associate
+P000001179,42,40900,Employed,Associate
+P000001180,53,72200,Unemployed,Master
+P000001181,39,88300,Self-Employed,PhD
+P000001182,59,40200,Employed,Associate
+P000001183,33,33600,Employed,Associate
+P000001184,60,55100,Employed,Bachelor
+P000001185,-5,3000,Employed,Bachelor
+P000001186,28,24200,Employed,High School
+P000001187,38,56500,Student,Bachelor
+P000001188,30,52000,Self-Employed,PhD
+P000001189,66,74900,Self-Employed,PhD
+P000001190,37,59000,Employed,Master
+P000001191,30,21700,Employed,High School
+P000001192,67,67200,Employed,Master
+P000001193,53,58000,Employed,Bachelor
+P000001194,43,54100,Retired,Bachelor
+P000001195,27,43400,Self-Employed,Bachelor
+P000001196,38,37800,Employed,Associate
+P000001197,32,44000,Retired,Master
+P000001198,30,55700,Employed,Master
+P000001199,51,41700,Unemployed,High School
+P000001200,26,51800,Employed,PhD
+P000001201,36,58600,Self-Employed,Bachelor
+P000001202,32,33800,Employed,Associate
+P000001203,40,73700,Employed,PhD
+P000001204,31,55700,Retired,PhD
+P000001205,53,80100,Employed,PhD
+P000001206,68,53100,Retired,Master
+P000001207,46,64100,Employed,Bachelor
+P000001208,34,39900,Unemployed,Bachelor
+P000001209,49,105600,Employed,PhD
+P000001210,29,55500,Employed,Master
+P000001211,32,41100,Employed,Bachelor
+P000001212,38,63600,Unemployed,Master
+P000001213,56,30800,Employed,High School
+P000001214,38,58100,Employed,Master
+P000001215,61,87400,Employed,PhD
+P000001216,34,32800,Employed,Bachelor
+P000001217,28,41000,Retired,Bachelor
+P000001218,40,29800,Unemployed,High School
+P000001219,47,73900,Student,Master
+P000001220,43,74700,Employed,PhD
+P000001221,30,40900,Self-Employed,Bachelor
+P000001222,35,72300,Employed,Master
+P000001223,36,80200,Employed,PhD
+P000001224,23,24000,Unemployed,Bachelor
+P000001225,29,28900,Unemployed,Associate
+P000001226,41,50400,Self-Employed,Bachelor
+P000001227,26,33700,Unemployed,Bachelor
+P000001228,30,68200,Employed,PhD
+P000001229,37,38200,Employed,Associate
+P000001230,46,43000,Employed,Associate
+P000001231,46,54300,Self-Employed,Bachelor
+P000001232,38,72300,Student,Master
+P000001233,60,43400,Employed,Bachelor
+P000001234,37,39400,Employed,Associate
+P000001235,29,23300,Self-Employed,High School
+P000001236,23,22900,Student,Bachelor
+P000001237,22,39900,Student,PhD
+P000001238,45,50800,Employed,Associate
+P000001239,20,24300,Employed,Bachelor
+P000001240,35,50300,Self-Employed,Bachelor
+P000001241,56,71500,Self-Employed,Master
+P000001242,30,65900,Employed,PhD
+P000001243,32,59100,Student,PhD
+P000001244,42,58200,Unemployed,Master
+P000001245,48,43000,Self-Employed,High School
+P000001246,35,32200,Employed,High School
+P000001247,35,65000,Unemployed,Master
+P000001248,57,35800,Student,Associate
+P000001249,22,23400,Student,Bachelor
+P000001250,-5,3000,Employed,Bachelor
+P000001251,44,82200,Employed,PhD
+P000001252,18,23300,Unemployed,Bachelor
+P000001253,35,70600,Self-Employed,Master
+P000001254,41,55700,Retired,Bachelor
+P000001255,24,31900,Student,Master
+P000001256,41,35000,Employed,High School
+P000001257,25
+P000001258,53,96100,Unemployed,PhD
+P000001259,41,57800,Self-Employed,Master
+P000001260,28,51600,Employed,Master
+P000001261,25,38100,Employed,Bachelor
+P000001262,31,49000,Retired,Master
+P000001263,32,61600,Student,PhD
+P000001264,39,38300,Self-Employed,Associate
+P000001265,46,70800,Unemployed,Master
+P000001266,53,63200,Student,Bachelor
+P000001267,46,35300,Self-Employed,High School
+P000001268,38,54100,Employed,Bachelor
+P000001269,18,17900,Student,Associate
+P000001270,33,39900,Employed,Bachelor
+P000001271,62,56800,Retired,Master
+P000001272,48,65100,Retired,Bachelor
+P000001273,50,54300,Retired,Bachelor
+P000001274,18,23000,Employed,Bachelor
+P000001275,36,46700,Employed,Bachelor
+P000001276,49,68900,Retired,Master
+P000001277,38,46300,Employed,Bachelor
+P000001278,22,22300,Unemployed,Bachelor
+P000001279,42,46200,Self-Employed,Bachelor
+P000001280,37,41400,Employed,Associate
+P000001281,27,52800,Student,Master
+P000001282,28,37400,Employed,Bachelor
+P000001283,47,35000,Student,High School
+P000001284,18,19300,Unemployed,Associate
+P000001285,40,69400,Employed,Master
+P000001286,34,34200,Unemployed,Bachelor
+P000001287,47,61600,Retired,Bachelor
+P000001288,20,24500,Student,Master
+P000001289,46,83500,Self-Employed,Master
+P000001290,36,34400,Employed,High School
+P000001291,31,52200,Employed,Master
+P000001292,42,59000,Self-Employed,Bachelor
+P000001293,47,52500,Employed,Bachelor
+P000001294,49,50000,Student,Bachelor
+P000001295,44,37800,Self-Employed,High School
+P000001296,45,41800,Student,High School
+P000001297,18,20100,Unemployed,Bachelor
+P000001298,47,74500,Retired,Master
+P000001299,43,52400,Employed,Bachelor
+P000001300,31,26300,Retired,Associate
+P000001301,40,50000,Student,Bachelor
+P000001302,49,40300,Unemployed,High School
+P000001303,twentyfive,3000,Employed,Bachelor
+P000001304,52,101700,Retired,PhD
+P000001305,69,46700,Retired,Bachelor
+P000001306,28,41200,Employed,Bachelor
+P000001307,61,48800,Unemployed,Bachelor
+P000001308,53,51800,Employed,Bachelor
+P000001309,46,65300,Student,Bachelor
+P000001310,51,46600,Employed,Associate
+P000001311,48,41500,Employed,High School
+P000001312,46,57800,Employed,Bachelor
+P000001313,43,79300,Retired,PhD
+P000001314,33,43600,Unemployed,Master
+P000001315,34,35600,Retired,Bachelor
+P000001316,49,35100,Student,High School
+P000001317,36,46400,Self-Employed,Bachelor
+P000001318,-5,3000,Employed,Bachelor
+P000001319,46,61000,Self-Employed,Bachelor
+P000001320,28,22700,Employed,High School
+P000001321,52,41100,Employed,High School
+P000001322,28,35800,Employed,Bachelor
+P000001323,43,53800,Employed,Bachelor
+P000001324,31,37200,Retired,Bachelor
+P000001325,64,35800,Retired,Associate
+P000001326,58,45100,Employed,Bachelor
+P000001327,62,52700,Retired,Bachelor
+P000001328,24,30400,Unemployed,PhD
+P000001329,21,25200,Student,Bachelor
+P000001330,24,25500,Employed,Master
+P000001331,45,41900,Unemployed,Associate
+P000001332,23,22600,Student,Bachelor
+P000001333,44,57300,Student,Bachelor
+P000001334,36,87800,Student,PhD
+P000001335,32,38500,Employed,Bachelor
+P000001336,52,42800,Unemployed,Associate
+P000001337,29,30900,Employed,Associate
+P000001338,31,23600,Employed,High School
+P000001339,26,37300,Employed,Bachelor
+P000001340,41,46100,Student,Associate
+P000001341,47,58000,Employed,Bachelor
+P000001342,36,37000,Unemployed,High School
+P000001343,37,54900,Employed,Bachelor
+P000001344,36,72600,Retired,Master
+P000001345,35,38000,Self-Employed,Associate
+P000001346,61,55200,Employed,Bachelor
+P000001347,54,57500,Employed,Bachelor
+P000001348,52,80100,Employed,PhD
+P000001349,29,47400,Employed,Master
+P000001350,43,38500,Employed,High School
+P000001351,32,26600,Retired,High School
+P000001352,36,40200,Self-Employed,Associate
+P000001353,60,55700,Retired,Master
+P000001354,51,86100,Self-Employed,Master
+P000001355,47,58900,Employed,Bachelor
+P000001356,27,36000,Self-Employed,Bachelor
+P000001357,47,86600,Student,Master
+P000001358,39,74100,Employed,Master
+P000001359,44,44500,Retired,Bachelor
+P000001360,twentyfive,3000,Employed,Bachelor
+P000001361,35,40600,Employed,Associate
+P000001362,52,56300,Employed,Bachelor
+P000001363,39,44400,Retired,Bachelor
+P000001364,38,65100,Employed,Master
+P000001365,49,84800,Unemployed,Master
+P000001366,25
+P000001367,33,28000,Retired,High School
+P000001368,35,87300,Retired,PhD
+P000001369,27,41700,Employed,Bachelor
+P000001370,25,22700,Employed,High School
+P000001371,27,51200,Retired,Master
+P000001372,31,43700,Student,Master
+P000001373,52,104300,Student,PhD
+P000001374,36,58400,Unemployed,Master
+P000001375,23,31300,Unemployed,PhD
+P000001376,24,12400,Student,High School
+P000001377,31,41000,Self-Employed,Bachelor
+P000001378,43,55400,Employed,Bachelor
+P000001379,40,67300,Retired,Master
+P000001380,42,63800,Employed,Master
+P000001381,53,56400,Retired,Bachelor
+P000001382,32,36700,Unemployed,Bachelor
+P000001383,19,31000,Student,Master
+P000001384,40,44500,Employed,Associate
+P000001385,45,66800,Employed,Master
+P000001386,43,70500,Unemployed,Master
+P000001387,59,78300,Employed,PhD
+P000001388,37,46100,Self-Employed,Bachelor
+P000001389,67,31000,Retired,High School
+P000001390,32,63500,Employed,PhD
+P000001391,37,53700,Employed,Bachelor
+P000001392,32,38700,Unemployed,Bachelor
+P000001393,45,79300,Unemployed,Master
+P000001394,52,43800,Employed,Associate
+P000001395,36,49800,Employed,Bachelor
+P000001396,46,38100,Employed,High School
+P000001397,35,35600,Employed,Associate
+P000001398,37,48900,Employed,Bachelor
+P000001399,46,82200,Self-Employed,PhD
+P000001400,28,43400,Student,Bachelor
+P000001401,39,64500,Student,Master
+P000001402,21,19400,Employed,Bachelor
+P000001403,50,39400,Employed,High School
+P000001404,21,32200,Unemployed,Master
+P000001405,39,59900,Student,Master
+P000001406,23,21400,Student,Bachelor
+P000001407,40,55200,Student,Bachelor
+P000001408,33,55400,Retired,Master
+P000001409,44,66100,Unemployed,Master
+P000001410,42,58600,Student,Bachelor
+P000001411,42,58200,Employed,Bachelor
+P000001412,25
+P000001413,28,41200,Student,Bachelor
+P000001414,41,56300,Retired,Bachelor
+P000001415,41,53700,Student,Bachelor
+P000001416,45,39600,Self-Employed,Associate
+P000001417,43,34500,Self-Employed,High School
+P000001418,43,40100,Employed,Associate
+P000001419,25,N/A,Employed,Bachelor
+P000001420,47,53600,Unemployed,Bachelor
+P000001421,47,73900,Employed,Master
+P000001422,32,34400,Student,Bachelor
+P000001423,41,48000,Retired,Bachelor
+P000001424,35,54900,Retired,Bachelor
+P000001425,21,13600,Student,High School
+P000001426,21,19000,Student,Associate
+P000001427,36,49800,Employed,Bachelor
+P000001428,34,38500,Student,Bachelor
+P000001429,48,64900,Unemployed,Bachelor
+P000001430,38,80900,Unemployed,PhD
+P000001431,37,54400,Student,Bachelor
+P000001432,18,21200,Unemployed,Bachelor
+P000001433,68,53800,Employed,Bachelor
+P000001434,36,68100,Employed,Master
+P000001435,22,20500,Unemployed,Bachelor
+P000001436,56,38100,Employed,Associate
+P000001437,43,76600,Employed,Master
+P000001438,44,56300,Employed,Bachelor
+P000001439,25,51400,Employed,Master
+P000001440,45,81600,Retired,Master
+P000001441,56,80700,Unemployed,PhD
+P000001442,29,35600,Employed,Bachelor
+P000001443,44,60300,Unemployed,Master
+P000001444,32,35100,Self-Employed,Bachelor
+P000001445,30,27200,Student,High School
+P000001446,41,41300,Employed,Associate
+P000001447,48,65700,Employed,Bachelor
+P000001448,35,39300,Employed,Associate
+P000001449,54,76000,Employed,Master
+P000001450,37,60900,Unemployed,Master
+P000001451,25,27600,Retired,High School
+P000001452,46,34800,Retired,High School
+P000001453,32,54000,Student,Master
+P000001454,56,71900,Retired,PhD
+P000001455,32,35800,Student,Bachelor
+P000001456,36,54600,Employed,Bachelor
+P000001457,25
+P000001458,22,19000,Unemployed,Bachelor
+P000001459,40,60100,Retired,Master
+P000001460,41,32700,Retired,High School
+P000001461,33,45800,Employed,Master
+P000001462,51,52800,Employed,Bachelor
+P000001463,57,41200,Self-Employed,Bachelor
+P000001464,34,61800,Student,PhD
+P000001465,35,73100,Employed,Master
+P000001466,43,40200,Student,Associate
+P000001467,67,54400,Self-Employed,Bachelor
+P000001468,38,40900,Retired,Associate
+P000001469,47,60100,Employed,Bachelor
+P000001470,25
+P000001471,46,75500,Unemployed,Master
+P000001472,52,42300,Retired,Associate
+P000001473,36,46400,Student,Associate
+P000001474,55,69600,Unemployed,PhD
+P000001475,46,52600,Employed,Bachelor
+P000001476,64,50100,Employed,Bachelor
+P000001477,53,50800,Employed,Bachelor
+P000001478,60,84400,Employed,PhD
+P000001479,20,23500,Employed,Bachelor
+P000001480,44,91500,Employed,PhD
+P000001481,35,95400,Unemployed,PhD
+P000001482,49,57700,Unemployed,Bachelor
+P000001483,34,21100,Retired,High School
+P000001484,30,39100,Employed,Bachelor
+P000001485,28,41000,Employed,Bachelor
+P000001486,39,69100,Retired,Master
+P000001487,18,28100,Student,Master
+P000001488,33,42800,Employed,Bachelor
+P000001489,28,69800,Student,PhD
+P000001490,31,50500,Employed,Master
+P000001491,40,87100,Employed,PhD
+P000001492,45,57100,Employed,Bachelor
+P000001493,72,57200,Retired,Master
+P000001494,33,38300,Retired,Bachelor
+P000001495,24,24300,Student,Master
+P000001496,59,73700,Employed,PhD
+P000001497,35,61700,Employed,Master
+P000001498,25,N/A,Employed,Bachelor
+P000001499,49,52500,Student,Associate
+P000001500,26,37400,Employed,Bachelor
+P000001501,39,71900,Employed,PhD
+P000001502,30,51500,Self-Employed,Master
+P000001503,50,63300,Employed,Bachelor
+P000001504,77,57800,Retired,Master
+P000001505,49,51100,Employed,Bachelor
+P000001506,32,36500,Student,Bachelor
+P000001507,22,38200,Student,PhD
+P000001508,22,28400,Student,Master
+P000001509,32,55400,Employed,PhD
+P000001510,33,53100,Student,Master
+P000001511,26,41200,Student,Bachelor
+P000001512,51,88400,Student,PhD
+P000001513,55,39600,Self-Employed,Associate
+P000001514,32,25900,Retired,High School
+P000001515,54,41300,Retired,Associate
+P000001516,43,46700,Self-Employed,Bachelor
+P000001517,50,42200,Unemployed,Associate
+P000001518,40,50800,Unemployed,Bachelor
+P000001519,60,33900,Employed,Associate
+P000001520,65,32500,Retired,High School
+P000001521,50,33500,Student,High School
+P000001522,32,38300,Self-Employed,Bachelor
+P000001523,41,43700,Employed,Associate
+P000001524,30,21400,Unemployed,High School
+P000001525,65,53000,Employed,Bachelor
+P000001526,53,57800,Retired,Bachelor
+P000001527,53,50300,Employed,Bachelor
+P000001528,35,95100,Unemployed,PhD
+P000001529,33,33800,Unemployed,Bachelor
+P000001530,21,26800,Employed,Master
+P000001531,43,51000,Unemployed,Bachelor
+P000001532,61,48300,Self-Employed,Bachelor
+P000001533,49,59600,Retired,Bachelor
+P000001534,34,45100,Employed,Master
+P000001535,42,38500,Employed,Associate
+P000001536,20,25200,Unemployed,Bachelor
+P000001537,46,44100,Self-Employed,Associate
+P000001538,39,56900,Employed,Bachelor
+P000001539,47,39800,Employed,Associate
+P000001540,34,36700,Employed,Bachelor
+P000001541,21,24400,Unemployed,Bachelor
+P000001542,34,29000,Self-Employed,Associate
+P000001543,42,58900,Student,Bachelor
+P000001544,31,30800,Employed,Associate
+P000001545,30,27700,Student,Associate
+P000001546,46,81800,Student,Master
+P000001547,48,85200,Student,PhD
+P000001548,48,65500,Employed,Bachelor
+P000001549,19,34100,Student,PhD
+P000001550,29,27800,Employed,Associate
+P000001551,34,33100,Employed,Associate
+P000001552,40,49800,Unemployed,Bachelor
+P000001553,40,71000,Student,Master
+P000001554,26,42800,Employed,Bachelor
+P000001555,30,23500,Student,High School
+P000001556,40,59300,Retired,Bachelor
+P000001557,34,35500,Retired,Bachelor
+P000001558,37,49300,Employed,Bachelor
+P000001559,33,65800,Employed,PhD
+P000001560,53,38500,Retired,High School
+P000001561,63,55400,Self-Employed,Master
+P000001562,33,33200,Student,Bachelor
+P000001563,41,68900,Employed,Master
+P000001564,23,26000,Unemployed,Master
+P000001565,59,43100,Employed,Associate
+P000001566,47,47500,Employed,Associate
+P000001567,44,45800,Employed,Bachelor
+P000001568,64,65600,Self-Employed,Master
+P000001569,39,35700,Retired,Associate
+P000001570,23,21900,Unemployed,Bachelor
+P000001571,44,57900,Employed,Bachelor
+P000001572,37,72700,Unemployed,PhD
+P000001573,46,60000,Employed,Bachelor
+P000001574,37,77000,Employed,Master
+P000001575,40,53200,Student,Bachelor
+P000001576,29,55900,Retired,PhD
+P000001577,32,38000,Student,Bachelor
+P000001578,66,34700,Retired,Associate
+P000001579,65,54500,Retired,Master
+P000001580,31,41300,Retired,Bachelor
+P000001581,41,58600,Employed,Master
+P000001582,23,18900,Student,Bachelor
+P000001583,32,21400,Employed,High School
+P000001584,45,78200,Self-Employed,Master
+P000001585,43,53500,Self-Employed,Bachelor
+P000001586,30,33000,Employed,Bachelor
+P000001587,53,106600,Employed,PhD
+P000001588,30,47600,Self-Employed,Master
+P000001589,50,58700,Employed,Bachelor
+P000001590,32,42700,Student,Bachelor
+P000001591,45,60400,Employed,Bachelor
+P000001592,49,49500,Employed,Bachelor
+P000001593,59,48800,Employed,Bachelor
+P000001594,24,34800,Student,PhD
+P000001595,40,52700,Self-Employed,Bachelor
+P000001596,30,36200,Employed,Bachelor
+P000001597,18,15200,Student,High School
+P000001598,29,42600,Self-Employed,Master
+P000001599,61,53000,Employed,Bachelor
+P000001600,40,74300,Student,Master
+P000001601,31,41100,Student,Bachelor
+P000001602,38,72800,Retired,PhD
+P000001603,44,32900,Employed,High School
+P000001604,29,39500,Retired,Bachelor
+P000001605,51,60100,Unemployed,Bachelor
+P000001606,43,44000,Retired,Associate
+P000001607,26,38000,Employed,Bachelor
+P000001608,-5,3000,Employed,Bachelor
+P000001609,35,53700,Self-Employed,Bachelor
+P000001610,40,42800,Employed,Associate
+P000001611,27,22700,Unemployed,High School
+P000001612,66,42400,Self-Employed,Bachelor
+P000001613,44,72800,Student,PhD
+P000001614,38,45600,Self-Employed,Bachelor
+P000001615,47,92100,Student,PhD
+P000001616,39,87300,Retired,PhD
+P000001617,35,42000,Employed,Associate
+P000001618,37,55200,Student,Bachelor
+P000001619,41,59300,Self-Employed,Master
+P000001620,36,59600,Unemployed,Bachelor
+P000001621,30,36700,Employed,Bachelor
+P000001622,30,45400,Employed,Master
+P000001623,47,41700,Student,High School
+P000001624,31,37500,Employed,Bachelor
+P000001625,29,46600,Retired,Master
+P000001626,33,36400,Employed,Bachelor
+P000001627,51,49100,Unemployed,Associate
+P000001628,45,106300,Retired,PhD
+P000001629,47,65000,Retired,Bachelor
+P000001630,25,32900,Student,Associate
+P000001631,40,71200,Employed,PhD
+P000001632,61,46500,Employed,Bachelor
+P000001633,53,63600,Employed,Bachelor
+P000001634,24,31600,Unemployed,Master
+P000001635,41,75000,Employed,PhD
+P000001636,39,59400,Employed,Bachelor
+P000001637,21,18900,Unemployed,Bachelor
+P000001638,33,32800,Retired,Bachelor
+P000001639,35,46100,Retired,Bachelor
+P000001640,59,80000,Employed,PhD
+P000001641,46,38700,Student,High School
+P000001642,48,42900,Employed,Associate
+P000001643,45,51000,Employed,Bachelor
+P000001644,52,54800,Self-Employed,Bachelor
+P000001645,63,34100,Employed,High School
+P000001646,63,54100,Employed,Bachelor
+P000001647,36,41500,Employed,Associate
+P000001648,36,55000,Student,Bachelor
+P000001649,56,51000,Retired,Bachelor
+P000001650,32,50900,Employed,Master
+P000001651,19,26300,Student,Master
+P000001652,49,37000,Self-Employed,High School
+P000001653,35,52200,Student,Bachelor
+P000001654,57,33200,Employed,High School
+P000001655,33,24500,Employed,High School
+P000001656,27,27900,Employed,Associate
+P000001657,19,31400,Student,PhD
+P000001658,38,66800,Employed,Master
+P000001659,22,12500,Student,High School
+P000001660,25,61000,Unemployed,PhD
+P000001661,22,15700,Student,Associate
+P000001662,42,75600,Student,Master
+P000001663,41,37300,Employed,Associate
+P000001664,42,53200,Self-Employed,Bachelor
+P000001665,60,27200,Self-Employed,High School
+P000001666,20,25100,Student,Bachelor
+P000001667,41,56900,Student,Bachelor
+P000001668,52,53200,Self-Employed,Associate
+P000001669,24,18400,Employed,Associate
+P000001670,45,41600,Unemployed,High School
+P000001671,31,45200,Employed,Master
+P000001672,36,55900,Employed,Bachelor
+P000001673,38,59200,Unemployed,Bachelor
+P000001674,29,37500,Employed,Bachelor
+P000001675,45,76900,Employed,Master
+P000001676,48,42400,Unemployed,Associate
+P000001677,39,59200,Employed,Bachelor
+P000001678,29,38400,Employed,Bachelor
+P000001679,46,53900,Employed,Bachelor
+P000001680,57,65200,Retired,Master
+P000001681,56,55100,Student,Master
+P000001682,44,36400,Employed,High School
+P000001683,43,45900,Retired,Bachelor
+P000001684,31,26500,Employed,Associate
+P000001685,37,45100,Employed,Bachelor
+P000001686,44,58900,Employed,Master
+P000001687,37,38300,Employed,High School
+P000001688,32,27000,Unemployed,High School
+P000001689,18,35200,Student,PhD
+P000001690,38,74100,Employed,Master
+P000001691,60,51300,Employed,Bachelor
+P000001692,62,35800,Retired,High School
+P000001693,33,41400,Employed,Bachelor
+P000001694,43,77100,Employed,PhD
+P000001695,32,32600,Employed,Bachelor
+P000001696,39,49100,Employed,Bachelor
+P000001697,35,30800,Student,High School
+P000001698,twentyfive,3000,Employed,Bachelor
+P000001699,37,61100,Employed,Master
+P000001700,45,73600,Retired,Master
+P000001701,36,74700,Retired,Master
+P000001702,47,83700,Retired,PhD
+P000001703,31,24400,Self-Employed,High School
+P000001704,40,82400,Unemployed,PhD
+P000001705,42,76600,Retired,PhD
+P000001706,48,85700,Retired,Master
+P000001707,47,35100,Employed,High School
+P000001708,32,64300,Self-Employed,PhD
+P000001709,-5,3000,Employed,Bachelor
+P000001710,63,32400,Retired,High School
+P000001711,48,79800,Retired,Master
+P000001712,37,42800,Self-Employed,Associate
+P000001713,59,36200,Retired,Associate
+P000001714,25,N/A,Employed,Bachelor
+P000001715,20,22600,Student,Bachelor
+P000001716,54,65400,Retired,Master
+P000001717,50,62600,Unemployed,Bachelor
+P000001718,24,18700,Student,Bachelor
+P000001719,25,30400,Retired,Associate
+P000001720,33,56800,Employed,PhD
+P000001721,36,93000,Employed,PhD
+P000001722,41,76800,Employed,PhD
+P000001723,54,44700,Employed,Associate
+P000001724,30,49100,Employed,Master
+P000001725,48,37400,Employed,High School
+P000001726,47,51300,Employed,Bachelor
+P000001727,31,51800,Unemployed,Master
+P000001728,32,21400,Unemployed,High School
+P000001729,41,83400,Retired,PhD
+P000001730,70,43900,Self-Employed,Bachelor
+P000001731,19,22500,Student,Bachelor
+P000001732,30,34900,Unemployed,Bachelor
+P000001733,33,29200,Unemployed,Associate
+P000001734,36,56300,Employed,Bachelor
+P000001735,37,47800,Unemployed,Bachelor
+P000001736,47,85000,Employed,Master
+P000001737,25,N/A,Employed,Bachelor
+P000001738,37,44300,Retired,Associate
+P000001739,40,72000,Unemployed,Master
+P000001740,39,52200,Employed,Bachelor
+P000001741,55,27300,Self-Employed,High School
+P000001742,44,57600,Employed,Bachelor
+P000001743,56,86000,Self-Employed,PhD
+P000001744,36,51600,Employed,Bachelor
+P000001745,21,29000,Employed,Master
+P000001746,42,63100,Retired,Master
+P000001747,47,42000,Employed,High School
+P000001748,54,75300,Employed,Master
+P000001749,36,76400,Employed,Master
+P000001750,66,55900,Employed,Master
+P000001751,26,38200,Employed,Bachelor
+P000001752,56,59100,Employed,Master
+P000001753,39,65200,Employed,Master
+P000001754,21,23800,Student,Bachelor
+P000001755,38,54100,Employed,Bachelor
+P000001756,33,48600,Employed,Master
+P000001757,42,81200,Employed,PhD
+P000001758,56,43100,Unemployed,Associate
+P000001759,58,34000,Employed,High School
+P000001760,32,25100,Retired,High School
+P000001761,52,61000,Student,Bachelor
+P000001762,33,25300,Employed,High School
+P000001763,54,84700,Employed,Master
+P000001764,41,56200,Employed,Bachelor
+P000001765,50,51100,Retired,Associate
+P000001766,36,44700,Employed,Bachelor
+P000001767,47,89700,Self-Employed,PhD
+P000001768,26,39500,Employed,Bachelor
+P000001769,50,60000,Student,Bachelor
+P000001770,36,76900,Retired,Master
+P000001771,39,56800,Employed,Bachelor
+P000001772,36,30300,Student,High School
+P000001773,61,51400,Retired,Bachelor
+P000001774,29,38700,Employed,Bachelor
+
+P000001776,78,56300,Retired,Master
+P000001777,35,29200,Student,High School
+P000001778,25,43400,Student,Bachelor
+P000001779,39,55600,Student,Bachelor
+P000001780,56,49600,Retired,Bachelor
+P000001781,55,38400,Self-Employed,Associate
+P000001782,44,67000,Self-Employed,Master
+P000001783,73,53900,Retired,Bachelor
+P000001784,34,41000,Retired,Bachelor
+P000001785,30,32500,Employed,Bachelor
+P000001786,25,42500,Employed,Bachelor
+P000001787,22,22800,Student,Bachelor
+P000001788,28,39600,Employed,Bachelor
+P000001789,60,39900,Employed,Associate
+P000001790,46,67600,Student,Master
+P000001791,25,66100,Employed,PhD
+P000001792,40,69400,Student,Master
+P000001793,36,48300,Employed,Bachelor
+P000001794,33,27100,Student,Associate
+P000001795,35,37600,Employed,Associate
+P000001796,20,22100,Student,Bachelor
+P000001797,20,28800,Unemployed,Master
+P000001798,43,53400,Unemployed,Bachelor
+P000001799,50,64800,Self-Employed,Bachelor
+P000001800,41,75200,Employed,PhD
+P000001801,27,28400,Employed,Associate
+P000001802,46,74200,Unemployed,Master
+P000001803,30,24400,Employed,High School
+P000001804,54,60000,Employed,Bachelor
+P000001805,40,74500,Self-Employed,PhD
+P000001806,68,69900,Employed,Master
+P000001807,27,26900,Retired,Associate
+P000001808,37,35300,Employed,High School
+P000001809,33,41200,Employed,Bachelor
+P000001810,47,73100,Employed,Master
+P000001811,19,19900,Unemployed,Bachelor
+P000001812,33,26500,Employed,Associate
+P000001813,43,35400,Employed,Associate
+P000001814,32,21300,Self-Employed,High School
+P000001815,22,19800,Unemployed,Bachelor
+P000001816,56,31200,Retired,High School
+P000001817,50,53400,Retired,Bachelor
+P000001818,22,19800,Student,Bachelor
+P000001819,36,50700,Student,Bachelor
+P000001820,19,24600,Unemployed,Bachelor
+P000001821,22,18000,Student,Associate
+P000001822,18,26800,Student,Master
+P000001823,41,50100,Employed,Bachelor
+P000001824,41,57100,Employed,Bachelor
+P000001825,58,88200,Unemployed,PhD
+P000001826,67,42300,Employed,Bachelor
+P000001827,63,68700,Employed,Master
+P000001828,25
+P000001829,67,47300,Employed,Bachelor
+P000001830,twentyfive,3000,Employed,Bachelor
+P000001831,52,51900,Retired,Associate
+P000001832,50,40600,Employed,High School
+P000001833,31,47300,Employed,Master
+P000001834,33,33500,Employed,Bachelor
+P000001835,-5,3000,Employed,Bachelor
+P000001836,20,22500,Student,Bachelor
+P000001837,49,58600,Employed,Bachelor
+P000001838,21,37000,Student,PhD
+P000001839,34,49400,Unemployed,Master
+P000001840,41,50000,Unemployed,Bachelor
+P000001841,52,79700,Unemployed,Master
+P000001842,33,27200,Employed,Associate
+P000001843,32,39300,Self-Employed,Bachelor
+P000001844,54,83500,Employed,PhD
+P000001845,18,19900,Student,Bachelor
+P000001846,42,38900,Unemployed,High School
+P000001847,49,59500,Student,Bachelor
+P000001848,51,39700,Employed,High School
+P000001849,37,56600,Employed,Bachelor
+P000001850,43,33100,Unemployed,High School
+P000001851,40,57500,Employed,Bachelor
+P000001852,52,79200,Employed,PhD
+P000001853,23,22200,Student,Bachelor
+P000001854,54,86400,Employed,Master
+P000001855,40,62800,Employed,Master
+P000001856,28,33800,Retired,Bachelor
+P000001857,37,32100,Employed,High School
+P000001858,40,48500,Unemployed,Bachelor
+P000001859,twentyfive,3000,Employed,Bachelor
+P000001860,21,20200,Student,Associate
+P000001861,24,20600,Student,Bachelor
+P000001862,49,80200,Employed,Master
+P000001863,23,25000,Student,Master
+P000001864,28,28800,Employed,Associate
+P000001865,24,21800,Student,Bachelor
+P000001866,32,34000,Retired,Bachelor
+P000001867,31,32100,Student,Associate
+P000001868,36,48300,Employed,Bachelor
+P000001869,59,64400,Employed,Master
+P000001870,23,21500,Student,Bachelor
+P000001871,37,37500,Employed,High School
+P000001872,45,93300,Employed,PhD
+P000001873,20,23600,Employed,Bachelor
+P000001874,42,47000,Employed,Bachelor
+P000001875,30,32600,Unemployed,Associate
+P000001876,43,60500,Employed,Master
+P000001877,19,18900,Student,Associate
+P000001878,50,52700,Retired,Bachelor
+P000001879,26,43500,Employed,Master
+P000001880,60,27400,Employed,High School
+P000001881,29,24000,Employed,High School
+P000001882,38,29500,Retired,High School
+P000001883,45,66400,Employed,Master
+P000001884,41,46200,Employed,Bachelor
+P000001885,38,46300,Employed,Bachelor
+P000001886,29,37800,Employed,Bachelor
+P000001887,40,68100,Employed,Master
+P000001888,29,45600,Employed,Master
+P000001889,46,52700,Employed,Associate
+P000001890,62,54400,Retired,Master
+P000001891,34,51700,Unemployed,Master
+P000001892,49,77200,Self-Employed,Master
+P000001893,37,61000,Employed,Master
+P000001894,40,50000,Employed,Bachelor
+P000001895,23,15000,Student,Associate
+P000001896,56,41400,Student,Associate
+P000001897,42,33000,Employed,High School
+P000001898,29,32700,Student,Bachelor
+P000001899,67,42000,Retired,Bachelor
+P000001900,27,45900,Employed,Master
+P000001901,55,54800,Student,Bachelor
+P000001902,26,47200,Employed,Master
+P000001903,49,62800,Employed,Bachelor
+P000001904,22,24300,Student,Bachelor
+P000001905,35,55500,Retired,Bachelor
+P000001906,46,54100,Employed,Bachelor
+P000001907,36,92500,Student,PhD
+P000001908,56,52300,Unemployed,Bachelor
+P000001909,52,66100,Student,Master
+P000001910,28,26900,Student,High School
+P000001911,42,38600,Student,Associate
+P000001912,33,49600,Employed,Master
+P000001913,26,45600,Employed,Master
+P000001914,21,25600,Employed,Master
+P000001915,48,45600,Employed,Associate
+P000001916,31,44100,Retired,Master
+P000001917,46,51900,Self-Employed,Bachelor
+P000001918,50,84200,Employed,PhD
+P000001919,twentyfive,3000,Employed,Bachelor
+P000001920,29,24200,Employed,High School
+P000001921,18,25100,Employed,Master
+P000001922,28,40800,Employed,Bachelor
+P000001923,40,51500,Unemployed,Bachelor
+P000001924,20,31900,Student,PhD
+P000001925,39,59500,Employed,Bachelor
+P000001926,41,34200,Retired,High School
+P000001927,40,92800,Student,PhD
+P000001928,28,43200,Employed,Master
+P000001929,29,32600,Employed,Bachelor
+P000001930,37,53900,Student,Bachelor
+P000001931,36,40200,Employed,Associate
+P000001932,39,76600,Student,Master
+P000001933,22,19600,Student,Bachelor
+P000001934,46,65900,Retired,Bachelor
+P000001935,19,21400,Employed,Bachelor
+P000001936,25
+P000001937,20,28400,Student,Master
+P000001938,32,46500,Self-Employed,Master
+P000001939,32,40900,Employed,Bachelor
+P000001940,64,43800,Retired,Associate
+P000001941,28,23500,Employed,High School
+P000001942,58,33400,Employed,High School
+P000001943,39,53800,Self-Employed,Bachelor
+P000001944,59,42800,Employed,Bachelor
+P000001945,27,54000,Employed,Master
+P000001946,56,43100,Employed,Bachelor
+P000001947,25,55900,Retired,PhD
+P000001948,36,38900,Student,High School
+P000001949,56,44300,Retired,Bachelor
+P000001950,42,32200,Retired,High School
+P000001951,30,46300,Retired,Master
+P000001952,32,56700,Student,PhD
+P000001953,68,51000,Employed,Bachelor
+P000001954,34,34300,Employed,Bachelor
+P000001955,42,36800,Employed,Associate
+P000001956,38,71200,Employed,PhD
+P000001957,23,12800,Student,High School
+P000001958,36,50500,Retired,Bachelor
+P000001959,47,34700,Student,High School
+P000001960,40,57600,Employed,Master
+P000001961,47,52300,Self-Employed,Bachelor
+P000001962,50,89600,Self-Employed,PhD
+P000001963,41,43700,Employed,Associate
+P000001964,32,25400,Student,High School
+
+P000001966,39,54400,Self-Employed,Bachelor
+P000001967,61,53300,Unemployed,Bachelor
+P000001968,22,15900,Student,Associate
+P000001969,26,34400,Self-Employed,Bachelor
+P000001970,49,85900,Self-Employed,Master
+P000001971,47,101400,Employed,PhD
+P000001972,41,66600,Student,Master
+P000001973,27,37000,Employed,Bachelor
+P000001974,48,60500,Employed,Bachelor
+P000001975,52,42700,Self-Employed,Associate
+P000001976,19,21100,Unemployed,Bachelor
+P000001977,23,18700,Employed,Bachelor
+P000001978,30,30800,Employed,Associate
+P000001979,36,79800,Student,PhD
+P000001980,31,40000,Student,Bachelor
+P000001981,37,52000,Employed,Bachelor
+P000001982,28,68100,Employed,PhD
+P000001983,42,45100,Employed,Bachelor
+P000001984,35,68600,Employed,Master
+P000001985,48,71500,Employed,Master
+P000001986,43,69900,Employed,Master
+P000001987,23,25100,Employed,Bachelor
+P000001988,32,65300,Employed,PhD
+P000001989,48,58100,Self-Employed,Bachelor
+P000001990,49,78200,Employed,Master
+P000001991,61,47100,Employed,Bachelor
+P000001992,23,31800,Student,PhD
+P000001993,51,54000,Self-Employed,Bachelor
+P000001994,34,32500,Employed,Associate
+P000001995,66,27200,Retired,High School
+P000001996,23,23000,Student,Bachelor
+P000001997,55,84700,Retired,PhD
+
+P000001999,35,59400,Employed,Bachelor
+P000002000,39,58400,Self-Employed,Bachelor
+P000002001,18,18700,Student,Bachelor
+P000002002,60,45800,Employed,Bachelor
+P000002003,37,37900,Unemployed,Associate
+P000002004,29,36100,Employed,Bachelor
+P000002005,37,58700,Employed,Bachelor
+P000002006,45,55600,Student,Bachelor
+P000002007,59,28000,Employed,High School
+P000002008,68,34300,Retired,High School
+P000002009,25,N/A,Employed,Bachelor
+P000002010,44,47800,Retired,Associate
+P000002011,52,102200,Retired,PhD
+P000002012,40,46500,Employed,Associate
+P000002013,48,91600,Unemployed,PhD
+P000002014,44,41700,Employed,Associate
+P000002015,20,29000,Student,Master
+P000002016,46,69300,Employed,Master
+P000002017,21,20500,Employed,Bachelor
+P000002018,24,13500,Student,High School
+P000002019,44,50100,Employed,Bachelor
+P000002020,54,65500,Employed,Bachelor
+P000002021,45,60600,Employed,Bachelor
+P000002022,47,56300,Self-Employed,Bachelor
+P000002023,40,52600,Unemployed,Bachelor
+P000002024,35,93800,Retired,PhD
+P000002025,40,58900,Employed,Master
+P000002026,27,41000,Employed,Bachelor
+P000002027,33,32900,Retired,Bachelor
+P000002028,35,29800,Employed,High School
+P000002029,42,76700,Employed,Master
+P000002030,36,79800,Employed,PhD
+P000002031,25,N/A,Employed,Bachelor
+P000002032,44,57200,Unemployed,Bachelor
+P000002033,44,36700,Student,High School
+P000002034,46,60600,Employed,Bachelor
+P000002035,33,34500,Employed,Bachelor
+P000002036,62,54000,Employed,Bachelor
+P000002037,47,56800,Employed,Bachelor
+P000002038,26,32500,Employed,Associate
+P000002039,25
+P000002040,44,56900,Retired,Bachelor
+P000002041,56,51500,Student,Bachelor
+P000002042,29,31000,Employed,Associate
+P000002043,38,68700,Employed,Master
+P000002044,42,53600,Employed,Bachelor
+P000002045,24,20100,Student,Bachelor
+P000002046,74,43700,Retired,Associate
+P000002047,36,47900,Retired,Bachelor
+P000002048,32,27500,Unemployed,High School
+P000002049,39,45100,Employed,Bachelor
+P000002050,31,64000,Student,PhD
+P000002051,28,36200,Employed,Bachelor
+P000002052,68,49100,Retired,Bachelor
+P000002053,45,61600,Employed,Bachelor
+P000002054,38,45100,Employed,Bachelor
+P000002055,38,83600,Self-Employed,PhD
+P000002056,19,22300,Unemployed,Bachelor
+P000002057,62,48700,Employed,Bachelor
+P000002058,58,38600,Employed,Associate
+P000002059,29,40900,Unemployed,Bachelor
+P000002060,42,71300,Employed,PhD
+P000002061,31,43500,Self-Employed,Master
+P000002062,24,25200,Student,Bachelor
+P000002063,23,23300,Unemployed,Bachelor
+P000002064,54,54200,Employed,Bachelor
+P000002065,43,55100,Student,Bachelor
+P000002066,40,36200,Student,High School
+P000002067,25,35000,Employed,Bachelor
+P000002068,33,32800,Unemployed,Associate
+P000002069,29,40200,Employed,Bachelor
+P000002070,34,36400,Employed,Bachelor
+P000002071,23,20900,Employed,Bachelor
+P000002072,46,66000,Employed,Master
+P000002073,20,24400,Student,Bachelor
+P000002074,44,51600,Self-Employed,Bachelor
+P000002075,51,65900,Employed,Bachelor
+P000002076,30,24900,Employed,High School
+P000002077,20,25300,Employed,Master
+P000002078,31,50500,Self-Employed,Master
+P000002079,40,40500,Employed,Associate
+P000002080,34,53600,Unemployed,PhD
+P000002081,39,32900,Retired,High School
+P000002082,43,41600,Retired,Associate
+P000002083,36,45700,Student,Bachelor
+P000002084,39,67200,Retired,Master
+P000002085,32,38300,Retired,Bachelor
+P000002086,36,47600,Employed,Associate
+P000002087,53,50500,Student,Bachelor
+P000002088,25
+P000002089,21,20100,Student,Bachelor
+P000002090,21,27900,Employed,Master
+P000002091,43,76100,Employed,Master
+P000002092,27,40100,Self-Employed,Bachelor
+P000002093,40,47100,Employed,Bachelor
+P000002094,37,55600,Employed,Bachelor
+P000002095,67,44300,Retired,Bachelor
+P000002096,39,60500,Unemployed,Master
+P000002097,20,15500,Unemployed,High School
+P000002098,30,55000,Employed,Master
+P000002099,28,35200,Student,Bachelor
+P000002100,35,40100,Self-Employed,Associate
+P000002101,21,16200,Employed,Associate
+P000002102,56,54600,Employed,Bachelor
+P000002103,39,85400,Employed,PhD
+P000002104,23,24000,Student,Bachelor
+P000002105,58,57400,Self-Employed,Master
+P000002106,27,27500,Employed,Associate
+P000002107,61,82100,Employed,PhD
+P000002108,44,91300,Employed,PhD
+P000002109,28,27800,Retired,High School
+P000002110,25
+P000002111,37,38400,Employed,High School
+P000002112,47,95100,Student,PhD
+P000002113,39,54700,Employed,Bachelor
+P000002114,46,56200,Employed,Bachelor
+P000002115,21,23600,Unemployed,Bachelor
+P000002116,40,74600,Employed,Master
+P000002117,47,42900,Unemployed,Associate
+P000002118,25,33600,Student,Bachelor
+P000002119,32,69100,Employed,PhD
+P000002120,41,70600,Employed,Master
+P000002121,56,52700,Employed,Bachelor
+P000002122,51,48500,Employed,Associate
+P000002123,52,64500,Student,Master
+P000002124,28,26900,Employed,Associate
+P000002125,33,43100,Employed,Bachelor
+P000002126,66,44700,Employed,Bachelor
+P000002127,29,28200,Employed,Associate
+P000002128,28,40700,Employed,Bachelor
+P000002129,30,38300,Unemployed,Bachelor
+P000002130,44,40800,Employed,Associate
+P000002131,28,31300,Unemployed,Associate
+P000002132,33,34400,Self-Employed,Bachelor
+P000002133,67,61200,Retired,Master
+P000002134,22,27000,Employed,Master
+P000002135,30,38600,Unemployed,Bachelor
+P000002136,26,37100,Unemployed,Bachelor
+P000002137,72,82000,Self-Employed,PhD
+P000002138,46,65900,Employed,Master
+P000002139,47,62200,Employed,Bachelor
+P000002140,43,71400,Employed,Master
+P000002141,44,46200,Unemployed,Bachelor
+P000002142,32,24800,Employed,High School
+P000002143,43,37900,Employed,High School
+P000002144,54,80400,Student,Master
+P000002145,36,32400,Retired,High School
+P000002146,41,72300,Self-Employed,PhD
+P000002147,43,57900,Employed,Bachelor
+P000002148,33,45800,Unemployed,Master
+P000002149,30,42200,Self-Employed,Master
+P000002150,60,54300,Self-Employed,Master
+P000002151,24,19500,Student,Associate
+P000002152,37,43200,Self-Employed,Associate
+P000002153,50,61100,Self-Employed,Bachelor
+P000002154,25,59800,Employed,PhD
+P000002155,24,28200,Student,Master
+P000002156,70,83700,Retired,PhD
+P000002157,37,56700,Unemployed,Bachelor
+P000002158,35,48400,Retired,Bachelor
+P000002159,56,69500,Employed,PhD
+P000002160,34,54100,Student,Master
+P000002161,47,83700,Self-Employed,PhD
+P000002162,40,65900,Employed,Master
+P000002163,27,24400,Employed,High School
+P000002164,57,50700,Self-Employed,Bachelor
+P000002165,60,52700,Employed,Bachelor
+P000002166,21,17700,Student,Associate
+P000002167,42,33200,Employed,High School
+P000002168,52,43200,Retired,High School
+P000002169,53,88600,Retired,PhD
+P000002170,40,47200,Employed,Bachelor
+P000002171,54,58600,Retired,Bachelor
+P000002172,35,31300,Unemployed,High School
+P000002173,20,15700,Unemployed,High School
+P000002174,23,17100,Unemployed,Associate
+P000002175,35,67400,Employed,Master
+P000002176,75,53200,Retired,Master
+P000002177,29,42700,Employed,Master
+P000002178,39,95100,Employed,PhD
+P000002179,30,42300,Employed,Bachelor
+P000002180,41,35500,Self-Employed,Associate
+P000002181,30,38700,Employed,Bachelor
+P000002182,34,43200,Employed,Master
+P000002183,57,53700,Self-Employed,Bachelor
+P000002184,40,56900,Employed,Bachelor
+P000002185,30,50500,Employed,Master
+P000002186,25,36000,Employed,Bachelor
+P000002187,38,58400,Self-Employed,Bachelor
+P000002188,42,95300,Employed,PhD
+P000002189,27,44700,Employed,Master
+P000002190,43,74200,Self-Employed,Master
+P000002191,63,43200,Employed,Bachelor
+P000002192,39,51600,Employed,Bachelor
+P000002193,18,25200,Unemployed,Bachelor
+P000002194,49,99500,Retired,PhD
+P000002195,22,25000,Unemployed,Bachelor
+P000002196,31,49700,Employed,Master
+P000002197,35,31900,Employed,High School
+P000002198,30,41700,Employed,Bachelor
+P000002199,48,63600,Retired,Bachelor
+P000002200,29,31500,Self-Employed,Associate
+P000002201,53,38700,Unemployed,High School
+P000002202,31,21000,Employed,High School
+P000002203,35,58900,Student,Bachelor
+P000002204,26,47000,Employed,Master
+P000002205,52,53100,Unemployed,Associate
+P000002206,29,66500,Student,PhD
+P000002207,41,47700,Student,Associate
+P000002208,46,50200,Self-Employed,Bachelor
+P000002209,43,40700,Employed,Associate
+P000002210,21,29100,Employed,Master
+P000002211,46,54900,Retired,Bachelor
+P000002212,51,93200,Employed,PhD
+P000002213,55,54900,Employed,Master
+P000002214,46,71200,Employed,Master
+
+P000002216,43,61800,Self-Employed,Master
+P000002217,29,35800,Employed,Bachelor
+P000002218,44,60500,Retired,Master
+P000002219,36,49300,Employed,Bachelor
+P000002220,46,50400,Employed,Associate
+P000002221,52,43000,Employed,High School
+P000002222,40,36100,Employed,Associate
+P000002223,27,39000,Self-Employed,Bachelor
+P000002224,40,53200,Retired,Bachelor
+P000002225,38,43400,Retired,Associate
+P000002226,37,48800,Self-Employed,Bachelor
+P000002227,32,58200,Employed,PhD
+P000002228,27,64600,Retired,PhD
+P000002229,38,44700,Employed,Bachelor
+P000002230,53,73200,Employed,Master
+P000002231,39,61100,Employed,Master
+P000002232,31,34900,Retired,Bachelor
+P000002233,42,74900,Student,Master
+P000002234,22,22000,Student,Bachelor
+P000002235,42,38300,Self-Employed,Associate
+P000002236,29,46500,Employed,Master
+P000002237,22,19500,Student,Bachelor
+P000002238,53,68100,Employed,Master
+P000002239,23,25300,Employed,Bachelor
+P000002240,54,49400,Employed,Bachelor
+P000002241,34,26100,Self-Employed,Associate
+P000002242,50,62400,Self-Employed,Bachelor
+P000002243,64,51600,Employed,Bachelor
+P000002244,38,57000,Retired,Bachelor
+P000002245,29,31200,Unemployed,Associate
+P000002246,45,52300,Employed,Bachelor
+P000002247,45,61000,Self-Employed,Bachelor
+P000002248,46,44700,Self-Employed,Associate
+P000002249,38,55600,Employed,Bachelor
+P000002250,53,45700,Employed,Associate
+P000002251,61,49000,Unemployed,Bachelor
+P000002252,47,49500,Student,Bachelor
+P000002253,43,82900,Unemployed,PhD
+P000002254,44,57000,Unemployed,Bachelor
+P000002255,34,51300,Unemployed,Master
+P000002256,36,43100,Employed,Associate
+P000002257,37,63700,Student,Master
+P000002258,18,34800,Unemployed,PhD
+P000002259,38,46300,Self-Employed,Associate
+P000002260,25,37700,Student,Bachelor
+P000002261,twentyfive,3000,Employed,Bachelor
+P000002262,35,89700,Employed,PhD
+P000002263,51,62800,Student,Bachelor
+P000002264,22,12300,Employed,High School
+P000002265,30,35100,Employed,Bachelor
+P000002266,41,38200,Employed,High School
+P000002267,29,37900,Employed,Bachelor
+P000002268,20,13400,Student,High School
+P000002269,26,66100,Self-Employed,PhD
+P000002270,28,54500,Employed,PhD
+P000002271,49,52300,Unemployed,Associate
+P000002272,21,18300,Unemployed,Associate
+P000002273,33,40800,Employed,Bachelor
+P000002274,73,42300,Employed,Bachelor
+P000002275,52,68100,Employed,Master
+P000002276,66,51800,Retired,Bachelor
+P000002277,31,52900,Student,Master
+P000002278,61,54300,Self-Employed,Bachelor
+P000002279,49,37400,Student,High School
+P000002280,26,23400,Self-Employed,High School
+P000002281,44,54600,Employed,Bachelor
+P000002282,43,37900,Student,Associate
+P000002283,67,73200,Retired,PhD
+P000002284,28,38100,Unemployed,Bachelor
+P000002285,26,67500,Retired,PhD
+P000002286,39,37900,Employed,High School
+P000002287,44,53400,Employed,Bachelor
+P000002288,51,53900,Student,Bachelor
+P000002289,29,34600,Employed,Associate
+P000002290,30,47700,Self-Employed,Master
+
+P000002292,42,71400,Student,Master
+P000002293,57,38700,Employed,Associate
+P000002294,25,49300,Employed,Master
+P000002295,51,86000,Retired,Master
+P000002296,19,30800,Employed,Master
+P000002297,66,28700,Retired,High School
+P000002298,55,87100,Employed,PhD
+P000002299,36,59600,Student,Bachelor
+P000002300,48,34000,Employed,High School
+P000002301,19,31200,Employed,PhD
+P000002302,55,77000,Employed,PhD
+P000002303,26,34200,Employed,Bachelor
+P000002304,51,52300,Employed,Bachelor
+P000002305,25,57100,Employed,PhD
+P000002306,54,86200,Self-Employed,Master
+P000002307,28,34400,Student,Bachelor
+P000002308,59,48200,Unemployed,Bachelor
+P000002309,24,34600,Student,PhD
+P000002310,36,61900,Employed,Master
+P000002311,44,58800,Employed,Master
+P000002312,45,66300,Employed,Bachelor
+P000002313,23,24900,Student,Master
+P000002314,49,63500,Employed,Bachelor
+P000002315,37,90000,Employed,PhD
+P000002316,28,34800,Self-Employed,Bachelor
+P000002317,25,41900,Employed,Bachelor
+P000002318,55,54700,Unemployed,Bachelor
+P000002319,44,58600,Unemployed,Master
+P000002320,24,18900,Employed,Associate
+P000002321,22,31700,Employed,Master
+P000002322,30,28800,Employed,Associate
+P000002323,18,32600,Unemployed,PhD
+P000002324,23,24300,Student,Bachelor
+P000002325,41,34000,Self-Employed,High School
+P000002326,34,31000,Unemployed,Associate
+P000002327,27,38900,Self-Employed,Bachelor
+P000002328,42,38200,Unemployed,High School
+P000002329,34,21700,Employed,High School
+P000002330,50,38600,Student,High School
+P000002331,23,31200,Student,PhD
+P000002332,26,46400,Self-Employed,Master
+P000002333,53,56600,Retired,Bachelor
+P000002334,25,55400,Employed,Master
+P000002335,21,27400,Student,Master
+P000002336,41,72800,Employed,PhD
+P000002337,47,96100,Unemployed,PhD
+P000002338,44,37400,Employed,Associate
+P000002339,22,15500,Employed,Associate
+P000002340,52,64600,Employed,Bachelor
+P000002341,30,68400,Employed,PhD
+P000002342,67,43500,Self-Employed,Bachelor
+P000002343,21,19000,Student,Associate
+P000002344,46,71100,Employed,Master
+P000002345,27,35000,Student,Bachelor
+P000002346,62,34100,Employed,High School
+P000002347,50,65500,Employed,Master
+P000002348,27,67900,Unemployed,PhD
+P000002349,27,25800,Self-Employed,High School
+P000002350,53,61500,Employed,Bachelor
+P000002351,38,57500,Employed,Bachelor
+P000002352,38,58600,Employed,Bachelor
+P000002353,53,42100,Employed,High School
+P000002354,63,42800,Retired,Bachelor
+P000002355,47,49100,Employed,Associate
+P000002356,44,67500,Unemployed,Master
+P000002357,58,71500,Employed,Master
+P000002358,34,47100,Employed,Master
+P000002359,55,64300,Employed,Master
+P000002360,28,43600,Unemployed,Master
+P000002361,54,82200,Retired,Master
+P000002362,56,34900,Employed,High School
+P000002363,52,66400,Employed,Master
+P000002364,48,57900,Employed,Bachelor
+P000002365,43,35400,Employed,Associate
+P000002366,47,59900,Retired,Bachelor
+P000002367,46,50500,Retired,Bachelor
+P000002368,62,69200,Retired,Master
+P000002369,49,62200,Self-Employed,Bachelor
+P000002370,54,64200,Self-Employed,Bachelor
+P000002371,53,80900,Employed,PhD
+P000002372,20,19400,Employed,Bachelor
+P000002373,41,51200,Retired,Bachelor
+P000002374,twentyfive,3000,Employed,Bachelor
+P000002375,45,92100,Employed,PhD
+P000002376,48,56500,Self-Employed,Bachelor
+P000002377,30,26300,Employed,High School
+P000002378,67,69500,Self-Employed,Master
+P000002379,33,38600,Retired,Bachelor
+P000002380,20,25800,Student,Master
+P000002381,21,15800,Employed,High School
+P000002382,27,23000,Employed,High School
+P000002383,49,36700,Employed,High School
+P000002384,38,64400,Unemployed,Master
+P000002385,29,38900,Employed,Bachelor
+P000002386,40,33900,Unemployed,High School
+P000002387,61,58100,Retired,Master
+P000002388,19,18500,Unemployed,Associate
+P000002389,46,33000,Employed,High School
+P000002390,54,84400,Employed,Master
+P000002391,23,19400,Unemployed,Bachelor
+P000002392,37,95400,Employed,PhD
+P000002393,37,64500,Employed,Master
+P000002394,35,63500,Unemployed,Master
+P000002395,49,63200,Employed,Bachelor
+P000002396,27,39400,Employed,Bachelor
+P000002397,32,34700,Employed,Bachelor
+P000002398,47,50500,Retired,Bachelor
+P000002399,43,59000,Self-Employed,Bachelor
+P000002400,27,38700,Unemployed,Bachelor
+P000002401,39,57100,Employed,Bachelor
+P000002402,23,13000,Student,High School
+P000002403,42,32500,Employed,High School
+P000002404,41,47200,Self-Employed,Associate
+P000002405,33,42600,Retired,Master
+P000002406,21,30300,Unemployed,Master
+P000002407,51,59400,Student,Bachelor
+P000002408,30,43300,Employed,Bachelor
+P000002409,38,55000,Employed,Bachelor
+P000002410,56,50000,Retired,Bachelor
+P000002411,54,67800,Student,Master
+P000002412,60,45300,Employed,Bachelor
+P000002413,27,29600,Employed,Associate
+P000002414,56,69600,Employed,Master
+P000002415,35,90100,Employed,PhD
+P000002416,31,34100,Unemployed,Bachelor
+P000002417,48,60900,Student,Bachelor
+P000002418,23,20900,Unemployed,Bachelor
+P000002419,44,38100,Self-Employed,Associate
+P000002420,47,54300,Employed,Bachelor
+P000002421,28,35000,Employed,Bachelor
+P000002422,35,58700,Employed,Bachelor
+P000002423,32,33700,Unemployed,Bachelor
+P000002424,26,44700,Unemployed,Master
+P000002425,50,69000,Retired,Master
+P000002426,48,66500,Retired,Bachelor
+P000002427,37,55200,Student,Bachelor
+P000002428,33,31500,Employed,Associate
+P000002429,25,43100,Employed,Bachelor
+P000002430,54,38100,Employed,High School
+P000002431,41,34200,Self-Employed,High School
+P000002432,22,21700,Student,Bachelor
+P000002433,45,96200,Retired,PhD
+P000002434,31,28000,Unemployed,High School
+P000002435,32,37400,Self-Employed,Bachelor
+P000002436,29,33900,Employed,Bachelor
+P000002437,53,40300,Employed,High School
+P000002438,23,24000,Student,Bachelor
+P000002439,35,45800,Employed,Associate
+P000002440,32,40200,Employed,Bachelor
+P000002441,34,26700,Self-Employed,High School
+P000002442,51,86300,Retired,PhD
+P000002443,21,22500,Employed,Bachelor
+P000002444,57,33300,Student,Associate
+P000002445,43,68600,Self-Employed,Master
+P000002446,60,68000,Employed,PhD
+P000002447,48,82000,Self-Employed,Master
+P000002448,48,59700,Employed,Bachelor
+P000002449,34,50000,Employed,Master
+P000002450,31,63900,Self-Employed,PhD
+P000002451,37,45000,Employed,Bachelor
+P000002452,35,75700,Unemployed,Master
+P000002453,26,55900,Employed,Master
+P000002454,36,54300,Employed,Bachelor
+P000002455,29,32300,Student,Bachelor
+P000002456,52,53900,Retired,Bachelor
+P000002457,53,60200,Student,Bachelor
+P000002458,42,59000,Retired,Bachelor
+P000002459,57,51700,Self-Employed,Bachelor
+P000002460,59,51500,Retired,Bachelor
+P000002461,36,33200,Retired,High School
+P000002462,27,39300,Unemployed,Bachelor
+P000002463,56,46600,Employed,Bachelor
+P000002464,56,37500,Employed,Associate
+P000002465,47,61200,Self-Employed,Bachelor
+P000002466,48,53800,Unemployed,Bachelor
+P000002467,25,N/A,Employed,Bachelor
+P000002468,21,19200,Student,Bachelor
+P000002469,37,47600,Self-Employed,Associate
+P000002470,43,36800,Self-Employed,High School
+P000002471,37,49500,Unemployed,Bachelor
+P000002472,35,39700,Unemployed,Associate
+P000002473,58,41500,Employed,Associate
+P000002474,47,66100,Employed,Master
+P000002475,40,46700,Unemployed,Bachelor
+P000002476,58,45900,Employed,Bachelor
+P000002477,23,29700,Unemployed,Master
+P000002478,25,35500,Self-Employed,Bachelor
+P000002479,35,76400,Student,Master
+P000002480,33,42200,Employed,Bachelor
+P000002481,42,33700,Employed,High School
+P000002482,46,59400,Employed,Bachelor
+P000002483,48,35400,Unemployed,High School
+P000002484,41,58200,Employed,Bachelor
+P000002485,37,69800,Retired,Master
+P000002486,22,16100,Student,High School
+P000002487,38,80400,Self-Employed,PhD
+P000002488,54,70300,Self-Employed,Master
+P000002489,35,64600,Student,Master
+P000002490,45,77200,Employed,Master
+P000002491,46,64600,Unemployed,Bachelor
+P000002492,22,14800,Student,High School
+P000002493,49,60800,Employed,Bachelor
+P000002494,27,47100,Retired,Master
+P000002495,25,46300,Retired,Master
+P000002496,50,103200,Self-Employed,PhD
+P000002497,36,58600,Self-Employed,Bachelor
+P000002498,29,53800,Employed,PhD
+P000002499,24,23000,Employed,Bachelor
+P000002500,43,53400,Employed,Bachelor
+P000002501,21,31700,Student,Master
+P000002502,22,39400,Student,PhD
+P000002503,26,55700,Employed,PhD
+P000002504,34,54400,Unemployed,Master
+P000002505,46,59400,Employed,Bachelor
+P000002506,27,37900,Employed,Bachelor
+P000002507,31,21400,Employed,High School
+P000002508,47,80100,Unemployed,Master
+P000002509,54,37200,Retired,High School
+P000002510,35,93400,Employed,PhD
+P000002511,55,59300,Employed,Master
+P000002512,19,38200,Student,PhD
+P000002513,38,47400,Unemployed,Bachelor
+P000002514,39,49700,Self-Employed,Bachelor
+P000002515,46,67900,Retired,Master
+P000002516,49,64000,Student,Bachelor
+P000002517,69,45100,Retired,Bachelor
+P000002518,30,33900,Employed,Bachelor
+P000002519,71,27400,Retired,High School
+P000002520,52,49900,Employed,Bachelor
+P000002521,55,68400,Student,Master
+P000002522,57,31100,Employed,High School
+P000002523,18,23300,Student,Bachelor
+P000002524,33,42600,Employed,Bachelor
+P000002525,38,86100,Student,PhD
+P000002526,38,51300,Student,Bachelor
+P000002527,59,71300,Employed,Master
+P000002528,56,54300,Retired,Master
+P000002529,37,54600,Employed,Bachelor
+P000002530,33,43300,Employed,Bachelor
+P000002531,55,31200,Student,High School
+P000002532,22,19300,Employed,Associate
+P000002533,49,43000,Employed,Associate
+P000002534,51,59500,Retired,Bachelor
+P000002535,34,35200,Employed,Bachelor
+P000002536,32,36900,Employed,Bachelor
+P000002537,52,63400,Student,Bachelor
+P000002538,18,28000,Student,Master
+P000002539,24,24200,Student,Bachelor
+P000002540,40,50600,Unemployed,Bachelor
+P000002541,41,37000,Employed,High School
+P000002542,20,19900,Student,Associate
+P000002543,42,83200,Retired,PhD
+P000002544,61,35200,Retired,Associate
+P000002545,32,42500,Unemployed,Bachelor
+P000002546,52,42200,Employed,Associate
+P000002547,22,33000,Student,PhD
+P000002548,59,36700,Employed,Associate
+P000002549,70,64600,Retired,Master
+P000002550,35,45900,Retired,Associate
+P000002551,38,56300,Student,Bachelor
+P000002552,59,36500,Employed,Associate
+P000002553,51,65800,Employed,Master
+P000002554,28,56600,Self-Employed,Master
+P000002555,24,21800,Student,Bachelor
+P000002556,24,27400,Unemployed,Master
+P000002557,25,54000,Employed,PhD
+P000002558,35,60200,Student,Master
+P000002559,23,13800,Student,High School
+P000002560,59,30900,Employed,High School
+P000002561,37,35700,Student,High School
+P000002562,51,80600,Employed,PhD
+P000002563,20,30700,Employed,PhD
+P000002564,50,42400,Unemployed,Associate
+P000002565,33,28100,Employed,Associate
+P000002566,32,54600,Employed,PhD
+P000002567,23,19300,Student,Bachelor
+P000002568,29,21200,Student,High School
+P000002569,44,65400,Employed,Master
+P000002570,42,57300,Employed,Bachelor
+P000002571,52,56500,Employed,Bachelor
+P000002572,66,53000,Retired,Bachelor
+P000002573,21,22000,Student,Bachelor
+P000002574,62,66700,Retired,PhD
+
+P000002576,40,48300,Employed,Bachelor
+P000002577,twentyfive,3000,Employed,Bachelor
+P000002578,39,70400,Retired,Master
+P000002579,49,79100,Employed,Master
+P000002580,25
+P000002581,63,37500,Self-Employed,Associate
+P000002582,23,15800,Student,Associate
+P000002583,27,21900,Student,High School
+P000002584,37,35100,Student,High School
+P000002585,42,48900,Unemployed,Bachelor
+P000002586,42,57900,Unemployed,Master
+P000002587,41,71800,Retired,Master
+P000002588,39,36000,Employed,Associate
+P000002589,35,77300,Student,PhD
+P000002590,47,94900,Retired,PhD
+P000002591,40,68600,Employed,Master
+P000002592,33,35200,Employed,Bachelor
+P000002593,19,19100,Employed,Bachelor
+P000002594,40,56900,Employed,Bachelor
+P000002595,34,35500,Retired,Bachelor
+P000002596,57,34500,Employed,Associate
+P000002597,43,73300,Student,Master
+P000002598,34,30400,Unemployed,Associate
+P000002599,32,48200,Employed,Master
+P000002600,25,N/A,Employed,Bachelor
+P000002601,36,81500,Employed,PhD
+P000002602,38,65500,Employed,Master
+P000002603,36,36800,Employed,High School
+P000002604,46,60400,Employed,Bachelor
+P000002605,34,55900,Employed,Master
+P000002606,37,47400,Student,Bachelor
+P000002607,50,59700,Student,Bachelor
+P000002608,26,32300,Retired,Associate
+P000002609,37,55000,Employed,Bachelor
+P000002610,23,12800,Employed,High School
+P000002611,37,67400,Employed,Master
+P000002612,29,66600,Employed,PhD
+P000002613,48,60000,Employed,Bachelor
+P000002614,25
+P000002615,25,N/A,Employed,Bachelor
+P000002616,52,85500,Employed,Master
+P000002617,46,84600,Student,Master
+P000002618,-5,3000,Employed,Bachelor
+P000002619,41,50500,Employed,Bachelor
+P000002620,60,59300,Self-Employed,Master
+P000002621,37,74400,Student,PhD
+P000002622,56,54400,Unemployed,Bachelor
+P000002623,44,36300,Student,Associate
+P000002624,19,21400,Employed,Bachelor
+P000002625,29,56600,Employed,Master
+P000002626,49,66700,Unemployed,Bachelor
+P000002627,18,26100,Unemployed,Master
+P000002628,49,42700,Unemployed,Associate
+P000002629,42,87100,Unemployed,PhD
+P000002630,41,46500,Student,Associate
+P000002631,42,78500,Employed,PhD
+P000002632,50,60800,Employed,Bachelor
+P000002633,31,34200,Employed,Associate
+P000002634,47,60600,Retired,Bachelor
+P000002635,55,50600,Employed,Bachelor
+P000002636,46,34500,Employed,High School
+P000002637,45,79300,Unemployed,PhD
+P000002638,39,38200,Employed,High School
+P000002639,34,33100,Employed,Bachelor
+P000002640,47,32900,Employed,High School
+P000002641,24,29100,Employed,Master
+P000002642,44,33400,Employed,High School
+P000002643,38,37000,Unemployed,Associate
+P000002644,33,52900,Self-Employed,Master
+P000002645,22,16000,Student,High School
+P000002646,22,23800,Unemployed,Bachelor
+P000002647,38,77600,Employed,Master
+P000002648,42,45200,Employed,Bachelor
+P000002649,32,56500,Retired,Master
+P000002650,22,20600,Employed,Bachelor
+P000002651,34,42300,Student,Master
+P000002652,19,16800,Unemployed,Associate
+P000002653,29,61700,Employed,PhD
+P000002654,32,28000,Student,Associate
+P000002655,57,30300,Employed,High School
+P000002656,36,73500,Student,Master
+P000002657,25,32800,Unemployed,Bachelor
+
+P000002659,43,50200,Employed,Bachelor
+P000002660,52,73200,Unemployed,Master
+P000002661,41,58800,Employed,Bachelor
+P000002662,41,52800,Employed,Bachelor
+P000002663,28,35400,Retired,Bachelor
+P000002664,43,78300,Unemployed,PhD
+P000002665,25,35500,Student,Bachelor
+P000002666,71,61500,Retired,Master
+P000002667,47,51300,Unemployed,Bachelor
+P000002668,37,75500,Self-Employed,Master
+P000002669,35,58200,Employed,Bachelor
+P000002670,49,83500,Employed,Master
+P000002671,34,51100,Employed,Master
+P000002672,33,50300,Employed,Master
+P000002673,62,43600,Employed,Associate
+P000002674,27,44300,Retired,Master
+P000002675,38,50900,Unemployed,Bachelor
+P000002676,26,40700,Self-Employed,Bachelor
+P000002677,49,66000,Self-Employed,Bachelor
+P000002678,29,24900,Unemployed,High School
+P000002679,39,58500,Student,Master
+P000002680,56,46600,Student,Bachelor
+P000002681,43,84100,Unemployed,PhD
+P000002682,46,81400,Self-Employed,Master
+P000002683,28,26300,Employed,Associate
+P000002684,26,51000,Employed,Master
+P000002685,26,38600,Employed,Bachelor
+P000002686,54,50900,Employed,Associate
+P000002687,21,15900,Unemployed,Associate
+P000002688,45,71300,Student,Master
+P000002689,72,43800,Self-Employed,Bachelor
+P000002690,30,37000,Unemployed,Bachelor
+P000002691,49,40600,Student,Associate
+P000002692,33,44400,Employed,Master
+P000002693,41,44700,Employed,Bachelor
+P000002694,39,52700,Unemployed,Bachelor
+P000002695,18,31100,Unemployed,Master
+P000002696,46,100900,Student,PhD
+P000002697,47,64700,Self-Employed,Bachelor
+P000002698,30,21600,Student,High School
+P000002699,39,70400,Employed,Master
+P000002700,25,44600,Retired,Master
+P000002701,40,56700,Employed,Bachelor
+P000002702,38,47300,Student,Bachelor
+
+P000002704,44,45000,Employed,Bachelor
+P000002705,35,45700,Self-Employed,Bachelor
+P000002706,59,71100,Student,PhD
+P000002707,41,50800,Self-Employed,Bachelor
+P000002708,38,86200,Student,PhD
+P000002709,48,53300,Self-Employed,Associate
+P000002710,67,35600,Retired,Associate
+P000002711,37,89500,Employed,PhD
+P000002712,34,53100,Employed,Master
+P000002713,34,26700,Employed,Associate
+P000002714,40,67700,Employed,Master
+P000002715,32,26500,Self-Employed,High School
+P000002716,twentyfive,3000,Employed,Bachelor
+P000002717,50,58800,Retired,Bachelor
+P000002718,32,34800,Retired,Bachelor
+P000002719,38,59700,Self-Employed,Master
+P000002720,42,61000,Student,Master
+P000002721,30,32900,Employed,Bachelor
+P000002722,39,82400,Employed,PhD
+P000002723,45,34000,Self-Employed,High School
+P000002724,35,55900,Retired,Bachelor
+P000002725,-5,3000,Employed,Bachelor
+P000002726,45,50000,Employed,Bachelor
+P000002727,57,84300,Employed,PhD
+P000002728,20,19900,Employed,Associate
+P000002729,43,58500,Employed,Master
+P000002730,32,49200,Employed,Master
+P000002731,41,35200,Employed,High School
+P000002732,19,19500,Student,Bachelor
+P000002733,41,58600,Self-Employed,Bachelor
+P000002734,-5,3000,Employed,Bachelor
+P000002735,39,58200,Student,Bachelor
+P000002736,43,46700,Employed,Bachelor
+P000002737,28,64400,Employed,PhD
+P000002738,33,39800,Employed,Bachelor
+P000002739,44,57500,Retired,Bachelor
+P000002740,48,42500,Self-Employed,High School
+P000002741,26,46500,Unemployed,Master
+P000002742,57,33600,Employed,High School
+P000002743,33,53300,Self-Employed,Master
+P000002744,39,50100,Employed,Bachelor
+P000002745,29,68200,Employed,PhD
+P000002746,30,45900,Employed,Master
+P000002747,45,85100,Employed,PhD
+P000002748,44,35500,Employed,Associate
+P000002749,49,79400,Employed,PhD
+P000002750,34,26500,Employed,High School
+P000002751,42,69900,Employed,Master
+P000002752,21,19300,Student,Bachelor
+P000002753,36,53000,Student,Bachelor
+P000002754,53,42600,Employed,High School
+P000002755,29,25000,Retired,High School
+P000002756,42,32100,Employed,High School
+P000002757,28,35400,Employed,Bachelor
+P000002758,21,23100,Student,Bachelor
+P000002759,36,58500,Employed,Bachelor
+P000002760,25,N/A,Employed,Bachelor
+P000002761,52,86300,Student,Master
+P000002762,52,40100,Employed,Associate
+P000002763,39,45600,Employed,Bachelor
+P000002764,24,22000,Student,Bachelor
+P000002765,31,25500,Employed,High School
+P000002766,60,39500,Retired,Associate
+P000002767,61,82300,Employed,PhD
+P000002768,35,64400,Student,Master
+P000002769,35,71800,Employed,PhD
+P000002770,56,53100,Employed,Master
+P000002771,22,23800,Student,Bachelor
+P000002772,36,74400,Employed,Master
+P000002773,38,69100,Retired,Master
+P000002774,44,37200,Unemployed,High School
+P000002775,36,32500,Employed,High School
+P000002776,48,46500,Employed,Associate
+P000002777,43,58900,Employed,Bachelor
+P000002778,29,50400,Employed,Master
+P000002779,37,62700,Student,Master
+P000002780,51,42700,Student,High School
+P000002781,35,58300,Employed,Master
+P000002782,65,54500,Retired,Master
+P000002783,49,71200,Retired,Master
+P000002784,44,50100,Unemployed,Bachelor
+P000002785,44,84800,Self-Employed,PhD
+P000002786,26,26400,Student,Associate
+P000002787,68,50600,Self-Employed,Bachelor
+P000002788,37,38900,Employed,Associate
+P000002789,32,29700,Employed,Associate
+P000002790,20,15500,Employed,Associate
+P000002791,26,62700,Retired,PhD
+P000002792,26,24900,Retired,High School
+P000002793,53,84300,Retired,Master
+P000002794,51,54000,Self-Employed,Bachelor
+P000002795,31,21700,Employed,High School
+P000002796,40,59000,Student,Bachelor
+P000002797,71,44400,Employed,Bachelor
+P000002798,76,50300,Retired,Bachelor
+P000002799,38,30700,Student,High School
+P000002800,38,76100,Retired,PhD
+P000002801,38,64000,Employed,Master
+P000002802,46,73400,Retired,Master
+P000002803,31,33800,Employed,Bachelor
+P000002804,64,51000,Retired,Bachelor
+P000002805,39,55900,Self-Employed,Bachelor
+P000002806,30,34700,Student,Bachelor
+P000002807,25,51400,Employed,Master
+P000002808,29,33400,Unemployed,Bachelor
+P000002809,42,72400,Employed,Master
+P000002810,49,64000,Retired,Bachelor
+P000002811,45,32700,Retired,High School
+P000002812,47,84300,Unemployed,Master
+P000002813,54,66600,Employed,Bachelor
+P000002814,twentyfive,3000,Employed,Bachelor
+P000002815,26,21100,Retired,High School
+P000002816,21,13400,Student,High School
+P000002817,36,57200,Self-Employed,Bachelor
+P000002818,49,77500,Self-Employed,Master
+P000002819,34,55100,Retired,PhD
+P000002820,77,39400,Employed,Associate
+P000002821,45,55400,Employed,Bachelor
+P000002822,44,46600,Employed,Bachelor
+P000002823,45,82800,Employed,Master
+P000002824,27,33800,Unemployed,Bachelor
+P000002825,48,69600,Unemployed,Master
+P000002826,27,34700,Employed,Associate
+P000002827,42,74600,Employed,PhD
+P000002828,40,39100,Self-Employed,Associate
+P000002829,38,37300,Employed,High School
+P000002830,36,37400,Employed,Associate
+P000002831,56,52200,Unemployed,Bachelor
+P000002832,67,30000,Self-Employed,High School
+P000002833,37,52100,Employed,Bachelor
+P000002834,49,77700,Retired,Master
+P000002835,38,58500,Unemployed,Bachelor
+P000002836,41,45800,Retired,Associate
+P000002837,29,46600,Employed,Master
+P000002838,39,49800,Self-Employed,Bachelor
+P000002839,27,39300,Employed,Bachelor
+P000002840,36,46400,Employed,Associate
+P000002841,48,57700,Employed,Bachelor
+P000002842,46,50900,Student,Bachelor
+P000002843,45,62300,Unemployed,Bachelor
+P000002844,38,82200,Employed,PhD
+P000002845,50,65500,Unemployed,Bachelor
+P000002846,46,67500,Self-Employed,Master
+P000002847,37,40000,Employed,Associate
+P000002848,26,41000,Employed,Bachelor
+P000002849,19,30300,Student,PhD
+P000002850,29,44700,Employed,Master
+P000002851,34,34900,Employed,Bachelor
+P000002852,28,66200,Self-Employed,PhD
+
+P000002854,twentyfive,3000,Employed,Bachelor
+P000002855,24,13300,Employed,High School

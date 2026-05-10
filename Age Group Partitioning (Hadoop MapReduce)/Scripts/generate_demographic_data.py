@@ -336,3 +336,6 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+    
+# cd "F:\faculty\Level 3 S_2\Introduction to Big Data\Project\HadoopMapReduce\Age Group Partitioning (Hadoop MapReduce)"
+# python Scripts/generate_demographic_data.py --size-gb 1 --output "Data/demographic_data.csv"
