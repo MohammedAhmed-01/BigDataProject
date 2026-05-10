@@ -1,18 +1,48 @@
-# Age Group Partitioning using Hadoop MapReduce
-
-## Project Overview
-
-This project analyzes large-scale demographic data using Hadoop MapReduce.
-
-The main goal is to group people by age range and calculate demographic statistics, mainly the average income for each age group.
-
-A custom Hadoop Partitioner is used to make sure that each reducer processes only one specific age group.
+# 🧾 Age Group Partitioning using Hadoop MapReduce
 
 ---
 
-## Task 15: Age Group Partitioning
+# 📌 1. Project Overview
 
-### Input Format
+This project analyzes large-scale demographic data using Hadoop MapReduce.
+
+The main objective is to classify people into age groups and calculate demographic statistics, mainly:
+
+- Average income for each age group
+
+The project uses:
+
+- Hadoop MapReduce
+- Custom Partitioner
+- Combiner Optimization
+- Multiple Reducers
+- Large-scale datasets (>1GB)
+
+The system is designed to be:
+
+- ✅ Scalable
+- ✅ Fault tolerant
+- ✅ Efficient for big data processing
+- ✅ Optimized using Combiner and Partitioner
+
+---
+
+# 🎯 2. Task Objective
+
+The goal of this project is to:
+
+1. Read demographic records
+2. Extract age and income
+3. Assign each person to an age group
+4. Partition data by age group
+5. Calculate average income for each group
+6. Ensure each reducer processes one age group only
+
+---
+
+# 📂 3. Input Dataset
+
+## 📑 Input Format
 
 ```csv
 person_id,age,income,employment_status,education_level
@@ -25,11 +55,11 @@ P005,55,7000,Employed,PhD
 
 ---
 
-## Output Format
+# 📤 4. Output Format
 
-The final output contains one line for each age group.
+The output contains one record for each age group.
 
-Example:
+## ✅ Example Output
 
 ```text
 18-24   Avg Income: 2498
@@ -41,9 +71,9 @@ Example:
 
 ---
 
-## Age Groups
+# 🧩 5. Age Groups
 
-The project uses five age groups:
+The project uses five age categories:
 
 ```text
 18-24
@@ -53,27 +83,29 @@ The project uses five age groups:
 55+
 ```
 
+Each age group is processed by a dedicated reducer.
+
 ---
 
-## Project Structure
+# 🏗️ 6. Project Structure
 
 ```text
-Age Group Partitioning (Hadoop MapReduce)/
+Age Group Partitioning (Hadoop MapReduce)
 │
-├── Data/
+├── Data
 │   └── demographic_data.csv
 │
-├── Scripts/
+├── Scripts
 │   └── generate_demographic_data.py
 │
-├── src/
+├── src
 │   ├── AgeGroupMapper.java
 │   ├── AgeGroupReducer.java
 │   ├── AgeGroupCombiner.java
 │   ├── AgeGroupPartitioner.java
 │   └── AgeGroupDriver.java
 │
-├── output_agegroup/
+├── output_agegroup
 │   ├── _SUCCESS
 │   ├── part-r-00000
 │   ├── part-r-00001
@@ -81,30 +113,36 @@ Age Group Partitioning (Hadoop MapReduce)/
 │   ├── part-r-00003
 │   └── part-r-00004
 │
+├── screenshots
+├── Documents
 ├── agegroup.jar
 └── Readme.md
 ```
 
 ---
 
-## Components Explanation
+# ⚙️ 7. Hadoop Components Explanation
 
-### 1. Mapper
+---
 
-The Mapper reads each input record and extracts:
+## 🔹 7.1 Mapper
 
-- Age
-- Income
+The Mapper:
 
-It validates the input data and assigns each person to an age group.
+- Reads each demographic record
+- Extracts:
+  - age
+  - income
+- Validates the data
+- Assigns each person to an age group
 
-Mapper output:
+### 📤 Mapper Output
 
 ```text
 age_group, income
 ```
 
-Example:
+### ✅ Example
 
 ```text
 25-34   3000
@@ -112,11 +150,13 @@ Example:
 
 ---
 
-### 2. Custom Partitioner
+## 🔹 7.2 Custom Partitioner
 
-The custom partitioner sends each age group to a specific reducer.
+The custom Hadoop Partitioner ensures that:
 
-Example:
+- Each reducer receives one specific age group only
+
+### Example
 
 ```text
 18-24  -> Reducer 0
@@ -126,61 +166,75 @@ Example:
 55+    -> Reducer 4
 ```
 
-This satisfies the requirement that each reducer processes one age group only.
+This satisfies the task requirement.
 
 ---
 
-### 3. Combiner
+## 🔹 7.3 Combiner
 
-The Combiner is used to reduce the amount of data transferred between the Mapper and Reducer.
+The Combiner improves performance by reducing shuffle traffic.
 
-Instead of sending all income records directly to reducers, the Combiner calculates partial sums and counts locally.
+Instead of sending all income records directly to reducers:
 
-This improves performance, especially when processing large datasets.
+- Partial sums
+- Partial counts
+
+are calculated locally before shuffle.
+
+### Benefits
+
+- Reduces network traffic
+- Improves execution speed
+- Optimizes large-scale processing
 
 ---
 
-### 4. Reducer
+## 🔹 7.4 Reducer
 
-The Reducer receives all values for one age group and calculates:
+The Reducer receives all records for one age group.
+
+It calculates:
 
 ```text
 Average Income = Total Income / Number of Records
 ```
 
-The final output contains one result per age group.
+The reducer emits one final output line per age group.
 
 ---
 
-### 5. Driver
+## 🔹 7.5 Driver
 
-The Driver configures the MapReduce job.
+The Driver configures the Hadoop job.
 
 It sets:
 
 - Mapper class
 - Reducer class
 - Combiner class
-- Custom Partitioner class
+- Custom Partitioner
 - Input path
 - Output path
 - Number of reducers = 5
 
 ---
 
-## Data Validation
+# 🧠 8. Data Validation
 
-The project handles invalid records using Hadoop Counters.
+The project validates input records using Hadoop Counters.
 
-Validation includes:
+Validation checks include:
 
 - Malformed lines
+- Missing fields
 - Invalid age values
 - Out-of-range age values
 - Invalid income values
-- Missing or unparseable numeric values
+- Non-numeric values
 
-Example counters after running the job:
+---
+
+## ✅ Example Hadoop Counters
 
 ```text
 DataQuality
@@ -193,55 +247,59 @@ DataQuality
 
 ---
 
-## Large File Handling
+# 📊 9. Large File Handling
 
-The input dataset is generated to be larger than 1GB.
+The project processes datasets larger than 1GB.
 
-Example from Hadoop job counters:
+## Example Hadoop Counter
 
 ```text
 HDFS: Number of bytes read = 1102330521
 ```
 
-This confirms that the project successfully processes large-scale data.
+This confirms successful large-scale processing using Hadoop.
 
 ---
 
-# Full Commands from Start to End
-
-## 1. Open Cloudera Terminal
-
-Start the Cloudera QuickStart VM and open the terminal.
+# 🚀 10. Full Execution Guide
 
 ---
 
-## 2. Go to the Shared Project Folder
+## 🟢 Step 1 — Open Shared Folder
 
 ```bash
-cd "/media/sf_Age_Group_Partitioning_(Hadoop_MapReduce)"
+cd /media/sf_AgeGroupPartitioning
 ```
 
-Check the files:
+---
+
+## 🟢 Step 2 — Verify Project Files
 
 ```bash
 ls
 ```
 
-Expected output:
+Expected:
 
 ```text
-Data  Documents  Readme.md  screenshots  Scripts  src
+Data
+Documents
+output_agegroup
+screenshots
+Scripts
+src
+Readme.md
 ```
 
 ---
 
-## 3. Check Java Source Files
+## 🟢 Step 3 — Verify Java Source Files
 
 ```bash
 ls src
 ```
 
-Expected files:
+Expected:
 
 ```text
 AgeGroupMapper.java
@@ -253,36 +311,49 @@ AgeGroupDriver.java
 
 ---
 
-## 4. Compile Java Files
+# 🔨 11. Compilation Steps
+
+---
+
+## 🟢 Step 4 — Compile Java Files
 
 ```bash
 javac -classpath `hadoop classpath` -d . src/*.java
 ```
 
-If there is no error, the `.class` files will be created.
+---
+
+## 🟢 Step 5 — Verify Compiled Classes
+
+```bash
+ls *.class
+```
+
+Expected:
+
+```text
+AgeGroupCombiner.class
+AgeGroupDriver.class
+AgeGroupMapper.class
+AgeGroupPartitioner.class
+AgeGroupReducer.class
+```
 
 ---
 
-## 5. Create JAR File
+## 🟢 Step 6 — Create JAR File
 
 ```bash
 jar -cvf agegroup.jar *.class
 ```
 
-Expected output:
+---
 
-```text
-added manifest
-adding: AgeGroupCombiner.class
-adding: AgeGroupDriver.class
-adding: AgeGroupMapper.class
-adding: AgeGroupPartitioner.class
-adding: AgeGroupReducer.class
-```
+# 🗂️ 12. HDFS Setup
 
 ---
 
-## 6. Create HDFS Input Directory
+## 🟢 Step 7 — Create HDFS Input Directory
 
 ```bash
 hdfs dfs -mkdir -p /user/cloudera/agegroup/input
@@ -290,62 +361,77 @@ hdfs dfs -mkdir -p /user/cloudera/agegroup/input
 
 ---
 
-## 7. Upload Dataset to HDFS
-
-```bash
-hdfs dfs -put Data/demographic_data.csv /user/cloudera/agegroup/input/
-```
-
-If the file already exists, run:
+## 🟢 Step 8 — Remove Old Input File
 
 ```bash
 hdfs dfs -rm /user/cloudera/agegroup/input/demographic_data.csv
-hdfs dfs -put Data/demographic_data.csv /user/cloudera/agegroup/input/
 ```
 
----
-
-## 8. Check Uploaded Dataset
-
-```bash
-hdfs dfs -ls /user/cloudera/agegroup/input
-```
-
----
-
-## 9. Remove Old Output Folder
-
-Hadoop will not run if the output folder already exists.
-
-```bash
-hdfs dfs -rm -r /user/cloudera/agegroup/output
-```
-
-If you see this message:
+If you see:
 
 ```text
 No such file or directory
 ```
 
-That is normal if this is the first run.
+that is normal for the first run.
 
 ---
 
-## 10. Run the MapReduce Job
+## 🟢 Step 9 — Upload Dataset to HDFS
 
 ```bash
-hadoop jar agegroup.jar AgeGroupDriver /user/cloudera/agegroup/input /user/cloudera/agegroup/output
+hdfs dfs -put Data/demographic_data.csv /user/cloudera/agegroup/input/
 ```
 
 ---
 
-## 11. Check Output Files
+## 🟢 Step 10 — Verify Uploaded Dataset
+
+```bash
+hdfs dfs -ls /user/cloudera/agegroup/input
+```
+
+Expected:
+
+```text
+demographic_data.csv
+```
+
+---
+
+# ▶️ 13. Run Hadoop Job
+
+---
+
+## 🟢 Step 11 — Remove Old Output Folder
+
+```bash
+hdfs dfs -rm -r /user/cloudera/agegroup/output
+```
+
+---
+
+## 🟢 Step 12 — Execute MapReduce Job
+
+```bash
+hadoop jar agegroup.jar AgeGroupDriver \
+/user/cloudera/agegroup/input \
+/user/cloudera/agegroup/output
+```
+
+---
+
+# 📤 14. Verify Output
+
+---
+
+## 🟢 Step 13 — Check Output Files
 
 ```bash
 hdfs dfs -ls /user/cloudera/agegroup/output
 ```
 
-Expected files:
+Expected:
 
 ```text
 _SUCCESS
@@ -356,17 +442,17 @@ part-r-00003
 part-r-00004
 ```
 
-There are five output part files because the job uses five reducers.
+There are five output files because the job uses five reducers.
 
 ---
 
-## 12. Display Final Output
+## 🟢 Step 14 — Display Final Output
 
 ```bash
 hdfs dfs -cat /user/cloudera/agegroup/output/part-r-*
 ```
 
-Expected result:
+Expected:
 
 ```text
 18-24   Avg Income: XXXX
@@ -376,57 +462,39 @@ Expected result:
 55+     Avg Income: XXXX
 ```
 
-The output should contain only five lines because the final result is a summary for five age groups.
+---
+
+# 💾 15. Download Output Locally
 
 ---
 
-## 13. Download Output Folder Locally
+## 🟢 Step 15 — Download Output Folder
 
 ```bash
 hdfs dfs -get /user/cloudera/agegroup/output output_agegroup
 ```
 
-This downloads the full output folder from HDFS to the local project directory.
-
 ---
 
-## 14. Merge All Reducer Outputs into One File
+## 🟢 Step 16 — Merge Reducer Outputs
 
 ```bash
 hdfs dfs -cat /user/cloudera/agegroup/output/part-r-* > final_output.txt
 ```
 
-This creates a single local output file called:
+---
 
-```text
-final_output.txt
+## 🟢 Step 17 — Verify Final Output File
+
+```bash
+cat final_output.txt
 ```
 
 ---
 
-# Optional: Generate the Dataset
-
-If the dataset does not exist, run the Python script:
-
-```bash
-python Scripts/generate_demographic_data.py
-```
-
-Or, if your script accepts arguments:
-
-```bash
-python Scripts/generate_demographic_data.py --output Data/demographic_data.csv --target-size-gb 1.1
-```
-
-Check the generated file:
-
-```bash
-ls -lh Data/demographic_data.csv
-```
+# 🛠️ 16. Useful HDFS Commands
 
 ---
-
-# Useful HDFS Commands
 
 ## List HDFS Directory
 
@@ -434,11 +502,15 @@ ls -lh Data/demographic_data.csv
 hdfs dfs -ls /user/cloudera/agegroup
 ```
 
+---
+
 ## List Input Folder
 
 ```bash
 hdfs dfs -ls /user/cloudera/agegroup/input
 ```
+
+---
 
 ## List Output Folder
 
@@ -446,17 +518,23 @@ hdfs dfs -ls /user/cloudera/agegroup/input
 hdfs dfs -ls /user/cloudera/agegroup/output
 ```
 
+---
+
 ## View Output
 
 ```bash
 hdfs dfs -cat /user/cloudera/agegroup/output/part-r-*
 ```
 
+---
+
 ## Remove Input File
 
 ```bash
 hdfs dfs -rm /user/cloudera/agegroup/input/demographic_data.csv
 ```
+
+---
 
 ## Remove Output Folder
 
@@ -466,17 +544,19 @@ hdfs dfs -rm -r /user/cloudera/agegroup/output
 
 ---
 
-# Common Errors and Solutions
+# ⚠️ 17. Common Errors and Solutions
 
-## Error 1: Output Directory Already Exists
+---
 
-Error:
+## ❌ Error 1 — Output Directory Already Exists
+
+### Error
 
 ```text
 FileAlreadyExistsException: Output directory already exists
 ```
 
-Solution:
+### Solution
 
 ```bash
 hdfs dfs -rm -r /user/cloudera/agegroup/output
@@ -484,81 +564,68 @@ hdfs dfs -rm -r /user/cloudera/agegroup/output
 
 ---
 
-## Error 2: File Already Exists in Input
+## ❌ Error 2 — File Already Exists
 
-Error:
+### Error
 
 ```text
 put: File exists
 ```
 
-Solution:
+### Solution
 
 ```bash
 hdfs dfs -rm /user/cloudera/agegroup/input/demographic_data.csv
+
 hdfs dfs -put Data/demographic_data.csv /user/cloudera/agegroup/input/
 ```
 
 ---
 
-## Error 3: Permission Denied for Shared Folder
+## ❌ Error 3 — Permission Denied
 
-Solution:
+### Solution
 
 ```bash
 sudo usermod -aG vboxsf cloudera
+
 reboot
 ```
 
 ---
 
-## Error 4: Class Name Does Not Match File Name
+## ❌ Error 4 — Class Name Mismatch
 
-Example error:
+### Example Error
 
 ```text
 class AgeGroupDriver is public, should be declared in a file named AgeGroupDriver.java
 ```
 
-Solution:
+### Solution
 
-Make sure file names match class names exactly:
-
-```text
-AgeGroupDriver.java
-AgeGroupMapper.java
-AgeGroupReducer.java
-AgeGroupCombiner.java
-AgeGroupPartitioner.java
-```
-
-Java is case-sensitive.
+Ensure file names exactly match class names.
 
 ---
 
-## Error 5: Class Not Found
+## ❌ Error 5 — Class Not Found
 
-Make sure the JAR was created after successful compilation:
+### Solution
+
+Recompile and recreate the JAR:
 
 ```bash
 javac -classpath `hadoop classpath` -d . src/*.java
+
 jar -cvf agegroup.jar *.class
-```
-
-Then run:
-
-```bash
-hadoop jar agegroup.jar AgeGroupDriver /user/cloudera/agegroup/input /user/cloudera/agegroup/output
 ```
 
 ---
 
-# Final Run Commands Summary
-
-Use this section if you want the short version only.
+# ⚡ 18. Final Run Commands Summary
 
 ```bash
-cd "/media/sf_Age_Group_Partitioning_(Hadoop_MapReduce)"
+cd /media/sf_AgeGroupPartitioning
 
 javac -classpath `hadoop classpath` -d . src/*.java
 
@@ -572,7 +639,9 @@ hdfs dfs -put Data/demographic_data.csv /user/cloudera/agegroup/input/
 
 hdfs dfs -rm -r /user/cloudera/agegroup/output
 
-hadoop jar agegroup.jar AgeGroupDriver /user/cloudera/agegroup/input /user/cloudera/agegroup/output
+hadoop jar agegroup.jar AgeGroupDriver \
+/user/cloudera/agegroup/input \
+/user/cloudera/agegroup/output
 
 hdfs dfs -cat /user/cloudera/agegroup/output/part-r-*
 
@@ -583,20 +652,20 @@ hdfs dfs -cat /user/cloudera/agegroup/output/part-r-* > final_output.txt
 
 ---
 
-# Notes
+# 📌 19. Notes
 
-- The project uses 5 reducers.
-- Each reducer handles one age group only.
-- The final output contains 5 records.
-- The input file is larger than 1GB.
-- Hadoop counters prove that the job processed valid and invalid records.
-- The Combiner reduces shuffle size and improves performance.
-- The custom Partitioner satisfies the main requirement of the task.
+- The project uses 5 reducers
+- Each reducer handles one age group only
+- The final output contains 5 summary records
+- The dataset size exceeds 1GB
+- Hadoop Counters track valid and invalid records
+- The Combiner reduces shuffle traffic
+- The custom Partitioner satisfies task requirements
 
 ---
 
-# Conclusion
+# ✅ 20. Conclusion
 
 This project successfully implements Age Group Partitioning using Hadoop MapReduce.
 
-It processes a large demographic dataset, validates input records, partitions records by age group, and calculates average income for each group using multiple reducers.
+The system processes large-scale demographic datasets, validates records, partitions data using a custom Hadoop Partitioner, and calculates average income statistics efficiently using distributed processing.
