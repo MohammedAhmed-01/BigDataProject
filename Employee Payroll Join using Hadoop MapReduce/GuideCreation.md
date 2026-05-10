@@ -352,9 +352,3 @@ hdfs dfs -get /user/cloudera/payroll/output /media/sf_EmployeePayroll/payroll_ou
 
 ---
 
-## 👨‍💻 Author
-
-Big Data Project – Hadoop MapReduce Implementation
-
-```
-```
